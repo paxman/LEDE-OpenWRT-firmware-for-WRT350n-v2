@@ -1,0 +1,143 @@
+Package: luci-app-firewall
+Version: git-15.146.55931-1dada8c-1
+Depends: libc, firewall
+Source: feeds/luci/applications/luci-app-firewall
+Section: luci
+Architecture: all
+Installed-Size: 10417
+Filename: luci-app-firewall_git-15.146.55931-1dada8c-1_all.ipk
+Size: 11141
+MD5Sum: 9380509c0bdbca419f64467724a50fac
+SHA256sum: ce2764e90a8511a03dc58ac9b45f54722acd8f407ff82257c22e58c79228227c
+Description:  Firewall and Portforwarding application
+
+Package: luci-base
+Version: git-15.146.55931-1dada8c-1
+Depends: libc, lua, libuci-lua, luci-lib-nixio, luci-lib-ip, rpcd
+Source: feeds/luci/modules/luci-base
+Section: luci
+Architecture: orion
+Installed-Size: 120942
+Filename: luci-base_git-15.146.55931-1dada8c-1_orion.ipk
+Size: 121821
+MD5Sum: a5f3dbbcbeb006b1b2010b4c377681be
+SHA256sum: 24e7d46152b70f2269b183f48077282dac51a215a0bbaa6e653a4ed1cdd49a07
+Description:  LuCI core libraries
+
+Package: luci-lib-ip
+Version: git-15.146.55931-1dada8c-1
+Depends: libc, liblua, libnl-tiny
+Source: feeds/luci/libs/luci-lib-ip
+Section: luci
+Architecture: orion
+Installed-Size: 8614
+Filename: luci-lib-ip_git-15.146.55931-1dada8c-1_orion.ipk
+Size: 9292
+MD5Sum: 2f0780794b64c8a9beddcc40683a3956
+SHA256sum: b2b1a533c907f29ed9f1ffc6ddbf1a5a4ccf98db52df0811fb006d64b4a7e9ed
+Description:  Lua library for IP calculation and routing information
+
+Package: luci-lib-nixio
+Version: git-15.146.55931-1dada8c-1
+Depends: libc, liblua
+Source: feeds/luci/libs/luci-lib-nixio
+Section: luci
+Architecture: orion
+Installed-Size: 28278
+Filename: luci-lib-nixio_git-15.146.55931-1dada8c-1_orion.ipk
+Size: 28690
+MD5Sum: e9236b49ae2fb08236347940a3c4989a
+SHA256sum: 97253a5b8f39120d4e338a95c0ea2464602b37be7a773deea0ef9d3e0ba60c3c
+Description:  NIXIO POSIX library
+
+Package: luci-mod-admin-full
+Version: git-15.146.55931-1dada8c-1
+Depends: libc, luci-base, libubus-lua
+Source: feeds/luci/modules/luci-mod-admin-full
+Section: luci
+Architecture: orion
+Installed-Size: 68624
+Filename: luci-mod-admin-full_git-15.146.55931-1dada8c-1_orion.ipk
+Size: 69513
+MD5Sum: ab6971aa03026aa7a3d8e3a7d17c8d40
+SHA256sum: 4d5539fca3f3dffabb83277502b038ffe2889e8198e36db60415112169f2c9f4
+Description:  LuCI Administration - full-featured for full control
+
+Package: luci-proto-ipv6
+Version: git-15.146.55931-1dada8c-1
+Depends: libc
+Source: feeds/luci/protocols/luci-proto-ipv6
+Section: luci
+Architecture: all
+Installed-Size: 4658
+Filename: luci-proto-ipv6_git-15.146.55931-1dada8c-1_all.ipk
+Size: 5341
+MD5Sum: 6a1e9cd0d338a73aae8ae0dbd123897e
+SHA256sum: d100f8aa053c288a40e66a306f3c3c9c161b03dbbfc30f05bcfd62aba31ce441
+Description:  Support for DHCPv6/6in4/6to4/6rd/DS-Lite/aiccu
+
+Package: luci-proto-ppp
+Version: git-15.146.55931-1dada8c-1
+Depends: libc
+Source: feeds/luci/protocols/luci-proto-ppp
+Section: luci
+Architecture: all
+Installed-Size: 2574
+Filename: luci-proto-ppp_git-15.146.55931-1dada8c-1_all.ipk
+Size: 3222
+MD5Sum: 639ed68693ed5ff9eed5049ecead2487
+SHA256sum: 08969de423f3357ce25ad3edf88d34b6de5fb26ab61cfe65c0d4760364538bda
+Description:  Support for PPP/PPPoE/PPPoA/PPtP
+
+Package: luci-proto-relay
+Version: git-15.146.55931-1dada8c-1
+Depends: libc, relayd
+Source: feeds/luci/protocols/luci-proto-relay
+Section: luci
+Architecture: all
+Installed-Size: 1801
+Filename: luci-proto-relay_git-15.146.55931-1dada8c-1_all.ipk
+Size: 2463
+MD5Sum: c08cd6f42b9ccb97cf6d571c2b176609
+SHA256sum: d52b0effe6e4c32e2a56e6a9fc427028b6e52b17f21440f9916758bcdc3a4082
+Description:  Support for relayd pseudo bridges
+
+Package: luci-theme-bootstrap
+Version: git-15.146.55931-1dada8c-1
+Depends: libc
+Source: feeds/luci/themes/luci-theme-bootstrap
+Section: luci
+Architecture: all
+Installed-Size: 12817
+Filename: luci-theme-bootstrap_git-15.146.55931-1dada8c-1_all.ipk
+Size: 13552
+MD5Sum: eee8a2d98fe5dc0076b0c3f6b126fa78
+SHA256sum: 979d5402048a6e66876d1423df3dc2b10f5478935f6a74b49fd70d7b2672f04a
+Description:  Bootstrap Theme (default)
+
+Package: luci-theme-openwrt
+Version: git-15.146.55931-1dada8c-1
+Depends: libc
+Source: feeds/luci/themes/luci-theme-openwrt
+Section: luci
+Architecture: all
+Installed-Size: 6806
+Filename: luci-theme-openwrt_git-15.146.55931-1dada8c-1_all.ipk
+Size: 7575
+MD5Sum: 5fa482f2d81a46c0c73733bbfbff0c60
+SHA256sum: 2ae17a203e791b78c200926c0d4636cf51d594cb98ee1e27d444548b0ae458f2
+Description:  LuCI OpenWrt.org theme
+
+Package: luci
+Version: git-15.146.55931-1dada8c-1
+Depends: libc, uhttpd, uhttpd-mod-ubus, luci-mod-admin-full, luci-theme-bootstrap, luci-app-firewall, luci-proto-ppp, libiwinfo-lua, luci-proto-ipv6
+Source: feeds/luci/collections/luci
+Section: luci
+Architecture: all
+Installed-Size: 99
+Filename: luci_git-15.146.55931-1dada8c-1_all.ipk
+Size: 844
+MD5Sum: d892ca6d9d87eb8d483fd30609bccc29
+SHA256sum: e0e6c77630ec8a41c28d42046f11156553bd100c44d7f35a08dff7a809b3f686
+Description:  Standard OpenWrt set including full admin with ppp support and the default Bootstrap theme
+

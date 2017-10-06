@@ -1,0 +1,1327 @@
+Package: base-files
+Version: 157-r45374
+Depends: libc, netifd, procd, jsonfilter, usign
+Source: package/base-files
+License: GPL-2.0
+Section: base
+Architecture: orion
+Installed-Size: 29329
+Filename: base-files_157-r45374_orion.ipk
+Size: 30215
+MD5Sum: 62e4b0274f4e3f2409b4025e96aad2cf
+SHA256sum: 7bf6ebd0ea2fa77a2a1c19d34d2f99c3323394c81a85249239a2c8fe0927a801
+Description:  This package contains a base filesystem and system scripts for OpenWrt.
+
+Package: busybox
+Version: 1.23.2-1
+Depends: libc
+Source: package/utils/busybox
+License: GPL-2.0
+LicenseFiles: LICENSE archival/libarchive/bz/LICENSE
+Section: base
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 221140
+Filename: busybox_1.23.2-1_orion.ipk
+Size: 221804
+MD5Sum: 5f37e3142f9dcc2458c5e642b22d4ae1
+SHA256sum: 7c2eaf750fb8669f26bc17653b05b81529603ebe4ea5c5933958c5af1d65b396
+Description:  The Swiss Army Knife of embedded Linux.
+ It slices, it dices, it makes Julian Fries.
+
+Package: dnsmasq
+Version: 2.73rc4-1
+Depends: libc
+Source: package/network/services/dnsmasq
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: net
+Architecture: orion
+Installed-Size: 94376
+Filename: dnsmasq_2.73rc4-1_orion.ipk
+Size: 95229
+MD5Sum: 7a2bef560b7aaeed013f7d9b8331fbd6
+SHA256sum: adf3131b57cd5fb8bd120393924af1618a6cb4c642e327fb532673deb590dc50
+Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
+
+Package: dropbear
+Version: 2014.65-2
+Depends: libc
+Source: package/network/services/dropbear
+License: MIT
+LicenseFiles: LICENSE libtomcrypt/LICENSE libtommath/LICENSE
+Section: net
+Architecture: orion
+Installed-Size: 77160
+Filename: dropbear_2014.65-2_orion.ipk
+Size: 77957
+MD5Sum: 233db820e9577e39cafe55bb5f0d7921
+SHA256sum: 3c690ca33b26e76f8b299f1bda87a734ac66abbd616a6491e5dfef0ded577441
+Description:  A small SSH2 server/client designed for small memory environments.
+
+Package: firewall
+Version: 2015-02-26
+Depends: libc, libubox, libubus, libuci, libip4tc, libip6tc, libxtables, kmod-ipt-core, kmod-ipt-nat
+Source: package/network/config/firewall
+License: ISC
+Section: net
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: orion
+Installed-Size: 59867
+Filename: firewall_2015-02-26_orion.ipk
+Size: 60681
+MD5Sum: 2cc21dc61f673796ca29bd770583e278
+SHA256sum: a0ef27adace4149c35c8788638fa49302dca0fa7f52e355e458b61905d47bf9c
+Description:  This package provides a config-compatible C implementation of the UCI firewall.
+
+Package: fstools
+Version: 2015-04-10-cc526b9dd7471270dae586433ec610760df54cc0
+Depends: libc, ubox
+Source: package/system/fstools
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: orion
+Installed-Size: 15851
+Filename: fstools_2015-04-10-cc526b9dd7471270dae586433ec610760df54cc0_orion.ipk
+Size: 16566
+MD5Sum: 94db0cde3b2802563d0bba2e60dad76f
+SHA256sum: d70aa0ddb5a54abb5236841958af71fdb0f55f01570f0933af37a9f4707b8ad8
+Description:  OpenWrt filesystem tools
+
+Package: hostapd-common
+Version: 2015-03-25-1
+Depends: libc
+Source: package/network/services/hostapd
+License: BSD-3-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 4931
+Filename: hostapd-common_2015-03-25-1_orion.ipk
+Size: 5616
+MD5Sum: f65ad816770634d7bf1c1f42841b8cea
+SHA256sum: 9d8bb7181fb355850a4ac4452912090ba0acad36bac4416d460fdb5e447e56dc
+Description:  hostapd/wpa_supplicant common support files
+
+Package: ip6tables
+Version: 1.4.21-1
+Depends: libc, kmod-ip6tables, iptables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: net
+Architecture: orion
+Installed-Size: 194
+Filename: ip6tables_1.4.21-1_orion.ipk
+Size: 861
+MD5Sum: 8ffeb6cff71ebeb088034a10cd9a43fe
+SHA256sum: 31f20a9ffddc17b710681c2253c2743322d9c5d6aefb512a51914c4856c464cb
+Description:  IPv6 firewall administration tool
+
+Package: iptables
+Version: 1.4.21-1
+Depends: libc, kmod-ipt-core, libip4tc, libip6tc, libxtables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: net
+Architecture: orion
+Installed-Size: 51391
+Filename: iptables_1.4.21-1_orion.ipk
+Size: 52293
+MD5Sum: 31b5b4c99937b7359805bf51d1a1a691
+SHA256sum: 302bd0781e2af0e3961f7daa22507333e7191e69e4f5d34f03ff2d29548fbfe1
+Description:  IP firewall administration tool.
+ 
+ Matches:
+ - icmp
+ - tcp
+ - udp
+ - comment
+ - conntrack
+ - limit
+ - mac
+ - mark
+ - multiport
+ - set
+ - state
+ - time
+ 
+ Targets:
+ - ACCEPT
+ - CT
+ - DNAT
+ - DROP
+ - REJECT
+ - LOG
+ - MARK
+ - MASQUERADE
+ - REDIRECT
+ - SET
+ - SNAT
+ - TCPMSS
+ 
+ Tables:
+ - filter
+ - mangle
+ - nat
+ - raw
+ 
+
+Package: iw
+Version: 3.17-1
+Depends: libc, libnl-tiny
+Source: package/network/utils/iw
+License: GPL-2.0
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 42517
+Filename: iw_3.17-1_orion.ipk
+Size: 43359
+MD5Sum: 158b842dabe66890cff55c8ce9f40be9
+SHA256sum: 71992d78758b83027e9dd16fb33f9fba9c4ca4a03a13f3b34701403bf7b4635e
+Description:  cfg80211 interface configuration utility
+
+Package: iwinfo
+Version: 2015-03-23-40f2844fadc05f4a4de7699dbc12fee295b7057b
+Depends: libc, libiwinfo
+Source: package/network/utils/iwinfo
+License: GPL-2.0
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: orion
+Installed-Size: 6025
+Filename: iwinfo_2015-03-23-40f2844fadc05f4a4de7699dbc12fee295b7057b_orion.ipk
+Size: 6772
+MD5Sum: 7423dfa1f0e2bc76179d4be795884430
+SHA256sum: ba07424732f311ec6b61132a95e43f3bc05f8b88417af5bac68c0bd4da9b6ccb
+Description:  Command line frontend for the wireless information library.
+
+Package: jshn
+Version: 2015-03-22-b8d9b382e39823850331edc2a92379173daf1be3
+Depends: libc, libjson-c, libubox, libblobmsg-json
+Source: package/libs/libubox
+License: ISC
+Section: utils
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 4869
+Filename: jshn_2015-03-22-b8d9b382e39823850331edc2a92379173daf1be3_orion.ipk
+Size: 5632
+MD5Sum: 8df701018ea0a73d0babd884cb32d495
+SHA256sum: accb16aa3030dfdb262acf401b71b8aa505211fb2ad51b78398e37fa5e8854c3
+Description:  Library for parsing and generating JSON from shell scripts
+
+Package: jsonfilter
+Version: 2014-06-19-cdc760c58077f44fc40adbbe41e1556a67c1b9a9
+Depends: libc, libubox, libjson-c
+Source: package/utils/jsonfilter
+License: ISC
+Section: base
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: orion
+Installed-Size: 7086
+Filename: jsonfilter_2014-06-19-cdc760c58077f44fc40adbbe41e1556a67c1b9a9_orion.ipk
+Size: 7842
+MD5Sum: 14cbe70f4d42b86817a9c34865810924
+SHA256sum: aa083a34d768c2d657e6043201fdfdd5244ab9358f6248098d92892d248b0db6
+Description:  OpenWrt JSON filter utility
+
+Package: kmod-ath9k-common
+Version: 3.14.43+2015-03-09-3
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-ath
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 132418
+Filename: kmod-ath9k-common_3.14.43+2015-03-09-3_orion.ipk
+Size: 131089
+MD5Sum: 4650a8488537679f929688a87a0ef70d
+SHA256sum: 25c433958210da2619e309111b47653b399f78f2670b9cc3a972b16eed3abcae
+Description:  Atheros 802.11n wireless devices (common code for ath9k and ath9k_htc)
+
+Package: kmod-ath9k
+Version: 3.14.43+2015-03-09-3
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-ath9k-common
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 56741
+Filename: kmod-ath9k_3.14.43+2015-03-09-3_orion.ipk
+Size: 57523
+MD5Sum: 992d094a03c6b656b25bb8e49c9ff302
+SHA256sum: 7bcd9cdc108cd7cd9e5b13807797ccae9fb5943c365ff2b7a503d91b4025a94b
+Description:  This module adds support for wireless adapters based on
+ Atheros IEEE 802.11n AR5008 and AR9001 family of chipsets.
+
+Package: kmod-ath
+Version: 3.14.43+2015-03-09-3
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-mac80211
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 12379
+Filename: kmod-ath_3.14.43+2015-03-09-3_orion.ipk
+Size: 13204
+MD5Sum: 02a1cd6aa52c102799ac48fef2a9d35e
+SHA256sum: 9dba68527655ed2a98d565c56e4d34b0298f0d390534d4d835436172f9318570
+Description:  This module contains some common parts needed by Atheros Wireless drivers.
+
+Package: kmod-cfg80211
+Version: 3.14.43+2015-03-09-3
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), iw
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 110457
+Filename: kmod-cfg80211_3.14.43+2015-03-09-3_orion.ipk
+Size: 111304
+MD5Sum: 9335f43b7889143bbc0468fc4ad80415
+SHA256sum: 7b211aea57942778724f4fd184b13af280622c8d0ce32babc65fa1c31240d8c9
+Description:  cfg80211 is the Linux wireless LAN (802.11) configuration API.
+
+Package: kmod-crypto-aead
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-crypto-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 3489
+Filename: kmod-crypto-aead_3.14.43-1_orion.ipk
+Size: 4257
+MD5Sum: da6b0ff13ac760d443f4374eda1c3789
+SHA256sum: 6d3a5fa869e50e0998046985197ba46eb3e691e3c9db37144783e39fb102f14b
+Description:  CryptoAPI AEAD support
+
+Package: kmod-crypto-aes
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-crypto-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 182
+Filename: kmod-crypto-aes_3.14.43-1_orion.ipk
+Size: 951
+MD5Sum: a1e8ee37221c80514e1b9933ded5d235
+SHA256sum: 441afbfc82c019a81ad9731ed1e42adc0850979e0886ac8d7297947a3b4f4119
+Description:  AES cipher CryptoAPI module
+
+Package: kmod-crypto-arc4
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-crypto-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 1297
+Filename: kmod-crypto-arc4_3.14.43-1_orion.ipk
+Size: 2107
+MD5Sum: fb8d7ba02a377c2a5612d04b89322e7e
+SHA256sum: c6e74ed4fb0a52bdd84058151b729b6a3904eb6a75e819c059aac5db0001eece
+Description:  ARC4 (RC4) cipher CryptoAPI module
+
+Package: kmod-crypto-core
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 102
+Filename: kmod-crypto-core_3.14.43-1_orion.ipk
+Size: 799
+MD5Sum: 6d628e3c0c12e642307807c73e6287a3
+SHA256sum: c5179685c98607ac9431219229bd6e57fe6a9fc68c13746fea1cdb4a38091743
+Description:  Core CryptoAPI modules
+
+Package: kmod-crypto-hash
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-crypto-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 221
+Filename: kmod-crypto-hash_3.14.43-1_orion.ipk
+Size: 996
+MD5Sum: fd12ab1766365ae2c11d4ca5003f10e6
+SHA256sum: 0d47cb26c6fb86054873891095905889897b93311d3ed6aa97afd2516decb2c2
+Description:  CryptoAPI hash support
+
+Package: kmod-crypto-manager
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-crypto-aead, kmod-crypto-hash, kmod-crypto-pcompress, kmod-crypto-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 101
+Filename: kmod-crypto-manager_3.14.43-1_orion.ipk
+Size: 827
+MD5Sum: 44805611d575c69c88e4bb47694f39ad
+SHA256sum: a4e734dbf3ed359380b352883903c9bd53c2fd10620ed8367a0f9279742b90e1
+Description:  CryptoAPI algorithm manager
+
+Package: kmod-crypto-mv-cesa
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-crypto-manager, kmod-crypto-aes, kmod-crypto-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 179
+Filename: kmod-crypto-mv-cesa_3.14.43-1_orion.ipk
+Size: 956
+MD5Sum: a2e2f7d224251b311ae79a419438f2b9
+SHA256sum: a973f19d706326a15c55452d7c3e2c79c83cb3883fdb24fb511a3e7c37c85062
+Description:  Marvell crypto engine
+
+Package: kmod-crypto-pcompress
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-crypto-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 101
+Filename: kmod-crypto-pcompress_3.14.43-1_orion.ipk
+Size: 818
+MD5Sum: fee57a7354f14f333bc7f058a70e7eec
+SHA256sum: 4b2b37d1c03a3e50c8f7504cb413d02328b44dbf42021580fecc31fa334b390b
+Description:  CryptoAPI Partial (de)compression operations
+
+Package: kmod-gpio-button-hotplug
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34)
+Source: package/kernel/gpio-button-hotplug
+Section: kernel
+Architecture: orion
+Installed-Size: 3926
+Filename: kmod-gpio-button-hotplug_3.14.43-1_orion.ipk
+Size: 4841
+MD5Sum: d870d3d06a58f3410d02cfb994c15ecd
+SHA256sum: f2c9610ab251951d972a59a9f6ead30b5d984f9b3a0171dab61eaf7ed8281a5f
+Description:  This is a replacement for the following in-kernel drivers:
+ 1) gpio_keys (KEYBOARD_GPIO)
+ 2) gpio_keys_polled (KEYBOARD_GPIO_POLLED)
+ 
+ Instead of generating input events (like in-kernel drivers do) it generates
+ uevent-s and broadcasts them. This allows disabling input subsystem which is
+ an overkill for OpenWrt simple needs.
+
+Package: kmod-i2c-core
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 12868
+Filename: kmod-i2c-core_3.14.43-1_orion.ipk
+Size: 13703
+MD5Sum: b99df9595911e7c5801eb0b5e624256c
+SHA256sum: 969c369c15aaa3b7a93a5f890901736445ef5517c97d7ae1b3615fdcdbd4bef2
+Description:  Kernel modules for I2C support
+
+Package: kmod-i2c-mv64xxx
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-i2c-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 3737
+Filename: kmod-i2c-mv64xxx_3.14.43-1_orion.ipk
+Size: 4553
+MD5Sum: 708f62afcecca97d4485094dfdb3b4c8
+SHA256sum: a0e647f60c69d98b20147f98f9d61d9c33f88bb6cd1120296421c2186a5266c2
+Description:  Kernel module for I2C interface on the Kirkwood, Orion and Armada XP/370
+ family processors
+
+Package: kmod-ip6tables
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-nf-ipt6, kmod-ipt-core, kmod-ipt-conntrack
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 4086
+Filename: kmod-ip6tables_3.14.43-1_orion.ipk
+Size: 4853
+MD5Sum: 8fd181dfe6094dd20ed7df85c4c24aff
+SHA256sum: 33e9a09e6a6e061cdcf6e2b1676e28cf24e80b6dc9e8b96d57d820b7bd827c83
+Description:  Netfilter IPv6 firewalling support
+
+Package: kmod-ipt-conntrack
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-ipt-core, kmod-nf-conntrack
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 4698
+Filename: kmod-ipt-conntrack_3.14.43-1_orion.ipk
+Size: 5530
+MD5Sum: 64c479b55ff25907f388466736a0f471
+SHA256sum: 6aa62622e6af5c86a414557445d07cba606fc10d4531e6b89258d7020ddcb8f8
+Description:  Netfilter (IPv4) kernel modules for connection tracking
+ Includes:
+ - conntrack
+ - defrag
+ - iptables_raw
+ - NOTRACK
+ - state
+
+Package: kmod-ipt-core
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-nf-ipt
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 16007
+Filename: kmod-ipt-core_3.14.43-1_orion.ipk
+Size: 16891
+MD5Sum: b71a89e985bf097c4cddaed0dcc49a53
+SHA256sum: ac8867155eee87679d2a44d7241ff2cb3e32a39a5941e8b503c70ea2061e71d0
+Description:  Netfilter core kernel modules
+ Includes:
+ - comment
+ - limit
+ - LOG
+ - mac
+ - multiport
+ - REJECT
+ - TCPMSS
+
+Package: kmod-ipt-nat
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-ipt-core, kmod-nf-nat
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 4495
+Filename: kmod-ipt-nat_3.14.43-1_orion.ipk
+Size: 5309
+MD5Sum: 1e7b811e45df33d885ae999e196f9744
+SHA256sum: cff07bd9fff3b6894e907757eb82fa15b6ff8181d5e15156b7b613ec0270c32c
+Description:  Netfilter (IPv4) kernel modules for basic NAT targets
+ Includes:
+ - MASQUERADE
+
+Package: kmod-ipv6
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 143266
+Filename: kmod-ipv6_3.14.43-1_orion.ipk
+Size: 144062
+MD5Sum: e811f89c9471494e3358b467cfa47a32
+SHA256sum: 088c666c7e6dff8c7f66cb13799a51e2e7225fa152b0d929ecfff24cee9d81ce
+Description:  Kernel modules for IPv6 support
+
+Package: kmod-lib-crc-ccitt
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 1392
+Filename: kmod-lib-crc-ccitt_3.14.43-1_orion.ipk
+Size: 2183
+MD5Sum: 14fe31cfbd4121e70dd3371a866e7edd
+SHA256sum: 17ac92785066d795c4e404e739d2768c60ff4b69c54689943321cc101ee92a0f
+Description:  Kernel module for CRC-CCITT support
+
+Package: kmod-mac80211
+Version: 3.14.43+2015-03-09-3
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-crypto-core, kmod-crypto-arc4, kmod-crypto-aes, kmod-cfg80211, hostapd-common
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 206403
+Filename: kmod-mac80211_3.14.43+2015-03-09-3_orion.ipk
+Size: 206949
+MD5Sum: 8664700f7e0f1f5ab8de065134c83480
+SHA256sum: 60fcbc22379ebbf3ee8f5403541899aafa4544b79c7e6c095a7be7710c486171
+Description:  Generic IEEE 802.11 Networking Stack (mac80211)
+
+Package: kmod-nf-conntrack6
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-ipv6, kmod-nf-conntrack
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 8486
+Filename: kmod-nf-conntrack6_3.14.43-1_orion.ipk
+Size: 9356
+MD5Sum: 772036e4e6173412422d8b848d77e089
+SHA256sum: fe06499364f76f166ad4a0b92b8d12dcd3e5d57928ae5b22db53d360eb4df938
+Description:  Netfilter IPv6 connection tracking
+
+Package: kmod-nf-conntrack
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 33550
+Filename: kmod-nf-conntrack_3.14.43-1_orion.ipk
+Size: 34496
+MD5Sum: 7a40f09bd630a60ae4075ab8449d0049
+SHA256sum: 1ab7fdc78e27e579b651a7a522f023cf1fcfac107ce05714d70f64a917083b0f
+Description:  Netfilter connection tracking
+
+Package: kmod-nf-ipt6
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-nf-ipt, kmod-nf-conntrack6
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 7017
+Filename: kmod-nf-ipt6_3.14.43-1_orion.ipk
+Size: 7837
+MD5Sum: c599b6995801159faf247028925ae8b3
+SHA256sum: cb4393edeebd3c21f29df06e2e90e789c075f9f1e4868b91592655a45cf82631
+Description:  Ip6tables core
+
+Package: kmod-nf-ipt
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 12808
+Filename: kmod-nf-ipt_3.14.43-1_orion.ipk
+Size: 13630
+MD5Sum: 9d4baa31e214759362b646450a7a77b6
+SHA256sum: 941431346f5fe0f2c57a4cdee86f64f5298f0b675ccaab617b561cb2a036fd16
+Description:  Iptables core
+
+Package: kmod-nf-nat
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-nf-conntrack, kmod-nf-ipt
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 8824
+Filename: kmod-nf-nat_3.14.43-1_orion.ipk
+Size: 9677
+MD5Sum: 0c0e141e84f8d8c5fcf715b55b7d425d
+SHA256sum: 02581efd93ce7307e00322a8e359d73c04f9059b8d28f5a07291356549c77ee2
+Description:  Netfilter NAT
+
+Package: kmod-nf-nathelper
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-nf-nat
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 7366
+Filename: kmod-nf-nathelper_3.14.43-1_orion.ipk
+Size: 8243
+MD5Sum: 5e12c59da1574dd65b81d1d095446a40
+SHA256sum: e2db0339c715f8030615d06c6acb99b95525481981bea248ea2ba607ac99aa5b
+Description:  Default Netfilter (IPv4) Conntrack and NAT helpers
+ Includes:
+ - ftp
+ - irc
+ - tftp
+
+Package: kmod-nls-base
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 3078
+Filename: kmod-nls-base_3.14.43-1_orion.ipk
+Size: 3799
+MD5Sum: 4502e531ef3ab9cba41abb4e14d28242
+SHA256sum: d79c6131a90530922ac09069417e3f07235b9b1635cf5c6cedb0c0b218c7c520
+Description:  Kernel module for NLS (Native Language Support)
+
+Package: kmod-ppp
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-lib-crc-ccitt, kmod-slhc
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 18418
+Filename: kmod-ppp_3.14.43-1_orion.ipk
+Size: 19290
+MD5Sum: 4efa00083ab4ea19f30d37299bfb1d77
+SHA256sum: b9e3cf4f40ea3246547ae4c4a22bd0bd339c5e22842090158e96036524c20632
+Description:  Kernel modules for PPP support
+
+Package: kmod-pppoe
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-ppp, kmod-pppox
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 6099
+Filename: kmod-pppoe_3.14.43-1_orion.ipk
+Size: 6901
+MD5Sum: c7c693eb7b09763d9c2707347521ec49
+SHA256sum: d2eb49e29b295b1c933fbba910ea29d39c90cb0c7fb6aeb1c31eda20d351d6cc
+Description:  Kernel module for PPPoE (PPP over Ethernet) support
+
+Package: kmod-pppox
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-ppp
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 1497
+Filename: kmod-pppox_3.14.43-1_orion.ipk
+Size: 2235
+MD5Sum: f26542d5cbe7d4bf2f0f8655984431ac
+SHA256sum: afa9ddf0a2f571b2454889e1a33c84b278d0abe298826e89f081b05b96c9278a
+Description:  Kernel helper module for PPPoE and PPTP support
+
+Package: kmod-slhc
+Version: 3.14.43-1
+Depends: kernel (=3.14.43-1-767cbeb42e21adea793a0c452c21ec34), kmod-lib-crc-ccitt
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 3473
+Filename: kmod-slhc_3.14.43-1_orion.ipk
+Size: 4219
+MD5Sum: 3e1e4cdeae6e1edb1fb09d199f5e9e8f
+SHA256sum: a4cab0d7892728dceabd787451b1495e9049b3313eb3ba3100f53db8a6cae716
+Description:  Serial Line Header Compression
+
+Package: libblobmsg-json
+Version: 2015-03-22-b8d9b382e39823850331edc2a92379173daf1be3
+Depends: libc, libjson-c, libubox
+Source: package/libs/libubox
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 3151
+Filename: libblobmsg-json_2015-03-22-b8d9b382e39823850331edc2a92379173daf1be3_orion.ipk
+Size: 3906
+MD5Sum: 291b446aa329c01a438fb460a231a354
+SHA256sum: c12ae2f35bca401af0dc66f10f8c4767f929a121e115ac11aeba7372a546114a
+Description:  blobmsg <-> json conversion library
+
+Package: libgcc
+Version: 4.8-linaro-1
+Source: package/libs/toolchain
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 21584
+Filename: libgcc_4.8-linaro-1_orion.ipk
+Size: 22322
+MD5Sum: 4713cb0643bc060960294d82bb1c8f88
+SHA256sum: 5410e42b8b4d286b5796637cba508b35bd3237b73a56dfad5306b08cebbec6d4
+Description:  GCC support library
+
+Package: libip4tc
+Version: 1.4.21-1
+Depends: libc
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: orion
+Installed-Size: 9951
+Filename: libip4tc_1.4.21-1_orion.ipk
+Size: 10655
+MD5Sum: 6f017b751c51e409543bac13655beb13
+SHA256sum: 438410d2bfb3e2a3080be59670cac1de945cfa95d0c89fa4b7d87464d7802a23
+Description:  IPv4 firewall - shared libiptc library
+
+Package: libip6tc
+Version: 1.4.21-1
+Depends: libc
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: orion
+Installed-Size: 10334
+Filename: libip6tc_1.4.21-1_orion.ipk
+Size: 11056
+MD5Sum: 9e77a1c410ecbc40147e214b65f4ae00
+SHA256sum: 4b772b8a7049081a91ca1a46223c5a517da5f5892faebb2a723435ca15c98374
+Description:  IPv6 firewall - shared libiptc library
+
+Package: libiwinfo-lua
+Version: 2015-03-23-40f2844fadc05f4a4de7699dbc12fee295b7057b
+Depends: libc, libiwinfo, liblua
+Source: package/network/utils/iwinfo
+License: GPL-2.0
+Section: lang
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: orion
+Installed-Size: 5955
+Filename: libiwinfo-lua_2015-03-23-40f2844fadc05f4a4de7699dbc12fee295b7057b_orion.ipk
+Size: 6683
+MD5Sum: 4928ee0cbe0ff1e382be47147c9087fe
+SHA256sum: 6f6f00582529857d3d5115312374957cf9bc782315ebf87c86063f91df3c8b71
+Description:  This is the Lua binding for the iwinfo library. It provides access to all enabled
+ backends.
+
+Package: libiwinfo
+Version: 2015-03-23-40f2844fadc05f4a4de7699dbc12fee295b7057b
+Depends: libc, libnl-tiny, libuci
+Source: package/network/utils/iwinfo
+License: GPL-2.0
+Section: libs
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: orion
+Installed-Size: 21101
+Filename: libiwinfo_2015-03-23-40f2844fadc05f4a4de7699dbc12fee295b7057b_orion.ipk
+Size: 21923
+MD5Sum: 0dc9044fb4d097b31f36d61a91e29058
+SHA256sum: f6c112070d1078509103f4491df37be03ca9a2b8ee1dfd4f15581e968575c6cd
+Description:  Wireless information library with consistent interface for proprietary Broadcom,
+ madwifi, nl80211 and wext driver interfaces.
+
+Package: libjson-c
+Version: 0.12-1
+Depends: libc
+Source: package/libs/libjson-c
+License: MIT
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 14147
+Filename: libjson-c_0.12-1_orion.ipk
+Size: 14895
+MD5Sum: 4fba2f8b05347e3cd92c12269b84c541
+SHA256sum: ff8ece8ee92557872bfc6436dc93ffe4311f7674fa955953c225d3ac95700bf3
+Description:  This package contains a library for javascript object notation backends.
+
+Package: libjson-script
+Version: 2015-03-22-b8d9b382e39823850331edc2a92379173daf1be3
+Depends: libc, libubox
+Source: package/libs/libubox
+License: ISC
+Section: utils
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 4250
+Filename: libjson-script_2015-03-22-b8d9b382e39823850331edc2a92379173daf1be3_orion.ipk
+Size: 4966
+MD5Sum: eda11cb0d1e8de242304e502bc25a20e
+SHA256sum: c4acc16a64de9da11d141e3da36c8a363bd0a92ffb653dc61ee53128bd853fe9
+Description:  Minimalistic JSON based scripting engine
+
+Package: liblua
+Version: 5.1.5-1
+Depends: libc
+Source: package/utils/lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: libs
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: orion
+Installed-Size: 60723
+Filename: liblua_5.1.5-1_orion.ipk
+Size: 61301
+MD5Sum: e06ebb6ab8a20ff797be94bc6b7f82f6
+SHA256sum: e14c1b78c7259aad66e16fa67c8e47198da7d3781bea62cd067cfbc568bb311b
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua shared libraries, needed by other programs.
+
+Package: libnl-tiny
+Version: 0.1-4
+Depends: libc
+Source: package/libs/libnl-tiny
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 12065
+Filename: libnl-tiny_0.1-4_orion.ipk
+Size: 12774
+MD5Sum: b01a61bf90945505f58f27da1582b608
+SHA256sum: 2976cb9f766b54e8006aa9de663d25dccd42a28705fb7c774cad040595c52c98
+Description:  This package contains a stripped down version of libnl
+
+Package: libubox
+Version: 2015-03-22-b8d9b382e39823850331edc2a92379173daf1be3
+Depends: libc
+Source: package/libs/libubox
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 15597
+Filename: libubox_2015-03-22-b8d9b382e39823850331edc2a92379173daf1be3_orion.ipk
+Size: 16315
+MD5Sum: 9d4a23907e7820f17e96fa82b46c1b76
+SHA256sum: d2e94b6cb4df697aa25d8e07744ea7ba674d2a641852683a22584cb7bc491437
+Description:  Basic utility library
+
+Package: libubus-lua
+Version: 2015-01-22-2d660c519d2fcff95248da9f4fd9b37d61f9eb09
+Depends: libc, libubus, liblua
+Source: package/system/ubus
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 5078
+Filename: libubus-lua_2015-01-22-2d660c519d2fcff95248da9f4fd9b37d61f9eb09_orion.ipk
+Size: 5800
+MD5Sum: 64c7a3fa415c4c1b73c0f675f0866892
+SHA256sum: fd23780b8a1812b3a13d3c3f1aaaf02fde4cf769658a004a74b5bd818a217fa3
+Description:  Lua binding for the OpenWrt RPC client
+
+Package: libubus
+Version: 2015-01-22-2d660c519d2fcff95248da9f4fd9b37d61f9eb09
+Depends: libc, libubox
+Source: package/system/ubus
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 8184
+Filename: libubus_2015-01-22-2d660c519d2fcff95248da9f4fd9b37d61f9eb09_orion.ipk
+Size: 8970
+MD5Sum: aca9234a6a6fd8c530e97d776c18ba9f
+SHA256sum: 42bf38e2dcbbfd91ec5361c886a814aa91af24087538d60f5de8275741a12e65
+Description:  OpenWrt RPC client library
+
+Package: libuci-lua
+Version: 2015-04-09.1-1
+Depends: libc, libuci, liblua
+Source: package/system/uci
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 5484
+Filename: libuci-lua_2015-04-09.1-1_orion.ipk
+Size: 6167
+MD5Sum: 1a4f820dda0c7d10a35dc70e85cfaf20
+SHA256sum: aab417be33ec55b03fc2a2ee957a36b10e8aea6135999128ebed115a41658f56
+Description:  Lua plugin for UCI
+
+Package: libuci
+Version: 2015-04-09.1-1
+Depends: libc, libubox
+Source: package/system/uci
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 15059
+Filename: libuci_2015-04-09.1-1_orion.ipk
+Size: 15734
+MD5Sum: f6c6931c6346ace6c046895ec9d16549
+SHA256sum: 3962b9b519965f476d46e842ae9cf068907733b0de1065a5386ba2dcdf679ba4
+Description:  C library for the Unified Configuration Interface (UCI)
+
+Package: libxtables
+Version: 1.4.21-1
+Depends: libc
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: orion
+Installed-Size: 16536
+Filename: libxtables_1.4.21-1_orion.ipk
+Size: 17150
+MD5Sum: 5b18970fb7cf7a25fb819c0099811143
+SHA256sum: 0935f9658469f63d46d82048463ef5974402ddfbf99aad3737546d08ada9499d
+Description:  IPv4/IPv6 firewall - shared xtables library
+
+Package: lua
+Version: 5.1.5-1
+Depends: libc, liblua
+Source: package/utils/lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: lang
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: orion
+Installed-Size: 4156
+Filename: lua_5.1.5-1_orion.ipk
+Size: 4948
+MD5Sum: eba5abebfcd972a8b02f05f069d326a4
+SHA256sum: 80e949cff8d245306ba41be304e105ba75b78ff542e5dd1783dd4da64a842dce
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua language interpreter.
+
+Package: mtd
+Version: 20
+Depends: libc, libubox
+Source: package/system/mtd
+License: GPL-2.0+
+Section: utils
+Architecture: orion
+Installed-Size: 11035
+Filename: mtd_20_orion.ipk
+Size: 11777
+MD5Sum: 65128ece3a43c7d0aa6609e8f9524795
+SHA256sum: 26c31f68842e826b449cb3ef3ea8d0e8ca2162591f1772d6c8f45b7a3f46a0b5
+Description:  This package contains an utility useful to upgrade from other firmware or 
+ older OpenWrt releases.
+
+Package: netifd
+Version: 2015-04-09-92d2aea918f650f309f753349457028032d53280
+Depends: libc, libuci, libnl-tiny, libubus, ubus, ubusd, jshn, libubox
+Source: package/network/config/netifd
+License: GPL-2.0
+Section: base
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 58885
+Filename: netifd_2015-04-09-92d2aea918f650f309f753349457028032d53280_orion.ipk
+Size: 59746
+MD5Sum: c477a4d8a734feac338593d3c619c23b
+SHA256sum: c3d9618da871aaaf1766aafeb4d161d4c978e4b58199045756c636acaa1d4c81
+Description:  OpenWrt Network Interface Configuration Daemon
+
+Package: odhcp6c
+Version: 2015-04-10-c3bbeced0f204b6b9571148ae84227105baaf179
+Depends: libc, kmod-ipv6
+Source: package/network/ipv6/odhcp6c
+License: GPL-2.0
+Section: net
+Maintainer: Steven Barth <steven@midlink.org>
+Architecture: orion
+Installed-Size: 22178
+Filename: odhcp6c_2015-04-10-c3bbeced0f204b6b9571148ae84227105baaf179_orion.ipk
+Size: 22986
+MD5Sum: 548c0fe05ae9e148134413395e07a5b4
+SHA256sum: 5438405c35649ccb0dce115a12cfcbdd2bdfe3a139524ad1a670d71fb7322dd6
+Description:  Embedded DHCPv6-client for OpenWrt
+
+Package: odhcpd
+Version: 2015-04-10-e23972527f93a3d2a5412400384519ff550708b7
+Depends: libc, libubox, libuci, libubus
+Source: package/network/services/odhcpd
+License: GPL-2.0
+Section: net
+Maintainer: Steven Barth <steven@midlink.org>
+Architecture: orion
+Installed-Size: 29141
+Filename: odhcpd_2015-04-10-e23972527f93a3d2a5412400384519ff550708b7_orion.ipk
+Size: 30054
+MD5Sum: 22b16a3a483099b92f7d6427ee536abd
+SHA256sum: 3d3a04505813e3b8633aaf5c442fb780f97939801d84865c007a0649ed0d8fa5
+Description:  odhcpd is a daemon for serving and relaying IP management protocols to
+ configure clients and downstream routers. It tries to follow the RFC 6204
+ requirements for IPv6 home routers.
+ 
+ odhcpd provides server services for DHCP, RA, stateless and stateful DHCPv6,
+ prefix delegation and can be used to relay RA, DHCPv6 and NDP between routed
+ (non-bridged) interfaces in case no delegated prefixes are available.
+
+Package: opkg
+Version: 9c97d5ecd795709c8584e972bfdf3aee3a5b846d-7
+Depends: libc
+Source: package/system/opkg
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: base
+Maintainer: Jo-Philipp Wich <xm@subsignal.org>
+Architecture: orion
+Installed-Size: 55513
+Filename: opkg_9c97d5ecd795709c8584e972bfdf3aee3a5b846d-7_orion.ipk
+Size: 56485
+MD5Sum: 43b2dc6a61fca091e31a11fc401bad04
+SHA256sum: 7fa2159b5895ef26c5f79080015be314bff2d98cb08814e3fcb9ac197336b056
+Description:  Lightweight package management system
+ opkg is the opkg Package Management System, for handling
+ installation and removal of packages on a system. It can
+ recursively follow dependencies and download all packages
+ necessary to install a particular package.
+ 
+ opkg knows how to install both .ipk and .deb packages.
+
+Package: ppp-mod-pppoe
+Version: 2.4.7-5
+Depends: libc, kmod-pppoe
+Source: package/network/services/ppp
+License: BSD-4-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 9878
+Filename: ppp-mod-pppoe_2.4.7-5_orion.ipk
+Size: 10666
+MD5Sum: f167c46b13bcdaf40c6a60ef1f514e51
+SHA256sum: 58f00dd7874f73341ec901a92276f9dceabcf3c842fb8f22eac66bdcf15c3873
+Description:  This package contains a PPPoE (PPP over Ethernet) plugin for ppp.
+
+Package: ppp
+Version: 2.4.7-5
+Depends: libc, kmod-ppp
+Source: package/network/services/ppp
+License: BSD-4-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 104004
+Filename: ppp_2.4.7-5_orion.ipk
+Size: 104822
+MD5Sum: b460045251e1b4e60962784de941f31d
+SHA256sum: b56c47e877824d9e67bcddc3f23695e27b314c8f950ff9a2ab2c57858150ea84
+Description:  This package contains the PPP (Point-to-Point Protocol) daemon.
+
+Package: procd
+Version: 2015-04-10-27159f21f76b973a9fa3ec92b8fee2e390d43a43
+Depends: libc, ubusd, ubus, libjson-script, ubox, libubox, libubus
+Source: package/system/procd
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: orion
+Installed-Size: 32459
+Filename: procd_2015-04-10-27159f21f76b973a9fa3ec92b8fee2e390d43a43_orion.ipk
+Size: 33011
+MD5Sum: 010333f6dc4ff758ca6d8e7c3a38de2f
+SHA256sum: ebc3d878f8f76bcb20288c08a0c31dda795dec3c76313f9e485b6156f016512a
+Description:  OpenWrt system process manager
+
+Package: relayd
+Version: 2015-03-13-2970ff60bac6b70ecb682779d5c776dc559dc0b9
+Depends: libc, libubox
+Source: package/network/services/relayd
+License: GPL-2.0
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 9383
+Filename: relayd_2015-03-13-2970ff60bac6b70ecb682779d5c776dc559dc0b9_orion.ipk
+Size: 10184
+MD5Sum: 82924a9442f13bb8d695d5cab8aae21c
+SHA256sum: 559c07a7af4dd22cce5dc8b211aa0745c3182eb5fd73944a160303618fdee921
+Description:  Transparent routing / relay daemon
+
+Package: rpcd
+Version: 2015-03-30-311c85e7d9a8f7fee17e65afc371f4fd0c8cd588
+Depends: libc, libubus, libubox, libuci, libblobmsg-json
+Source: package/system/rpcd
+License: ISC
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: orion
+Installed-Size: 17265
+Filename: rpcd_2015-03-30-311c85e7d9a8f7fee17e65afc371f4fd0c8cd588_orion.ipk
+Size: 18030
+MD5Sum: 53381724e211acde1bf6c2e059d27cb5
+SHA256sum: e67ca824ac2db230b48d8a558794aa206c754b602c3712c0addd755edf02d34a
+Description:  This package provides the UBUS RPC backend server to expose various
+ functionality to frontend programs via JSON-RPC.
+
+Package: swconfig
+Version: 10
+Depends: libc, libuci, libnl-tiny
+Source: package/network/config/swconfig
+License: GPL-2.0
+Section: base
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 7133
+Filename: swconfig_10_orion.ipk
+Size: 7882
+MD5Sum: 44a9c3a4ab717eb813ce7d4363aa08e8
+SHA256sum: 1c4b5a96a03374bdff84e3013a539c9acd25e99da2e87795700f98a3b3c8f352
+Description:  Switch configuration utility
+
+Package: uboot-envtools
+Version: 2014.10-2
+Depends: libc
+Source: package/boot/uboot-envtools
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Section: utils
+Architecture: orion
+Installed-Size: 14244
+Filename: uboot-envtools_2014.10-2_orion.ipk
+Size: 15025
+MD5Sum: 998bb20bf749b4db57ec650a182d72c9
+SHA256sum: d5064419ed80e229e26d5d66ba801171a6efd46a8f3b5f28e03df604f314bbd7
+Description:  This package includes tools to read and modify U-Boot bootloader environment.
+
+Package: ubox
+Version: 2015-04-02-6fbafd7d5b2835d00eb9d1684e7c6ccf907177b8
+Depends: libc, libubox, ubusd, ubus, libubus, libuci
+Source: package/system/ubox
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: orion
+Installed-Size: 21027
+Filename: ubox_2015-04-02-6fbafd7d5b2835d00eb9d1684e7c6ccf907177b8_orion.ipk
+Size: 21842
+MD5Sum: a5aba0d36b6fcb7f2691ef2f8982e3a5
+SHA256sum: 7a14fe0cec0a809b35d439df25a4573687a8e2a4db5e4d7b5dbd649bca7a64de
+Description:  OpenWrt system helper toolbox
+
+Package: ubus
+Version: 2015-01-22-2d660c519d2fcff95248da9f4fd9b37d61f9eb09
+Depends: libc, libubus, libblobmsg-json, ubusd
+Source: package/system/ubus
+License: LGPL-2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 3685
+Filename: ubus_2015-01-22-2d660c519d2fcff95248da9f4fd9b37d61f9eb09_orion.ipk
+Size: 4446
+MD5Sum: 4333279cb04664664f07edaebfec1d21
+SHA256sum: 67d2618668855d2362d9daf2702a0d9b13fb77fc4b0f5be2e76b06c7aa6bc83b
+Description:  OpenWrt RPC client utility
+
+Package: ubusd
+Version: 2015-01-22-2d660c519d2fcff95248da9f4fd9b37d61f9eb09
+Depends: libc, libubox
+Source: package/system/ubus
+License: LGPL-2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 7020
+Filename: ubusd_2015-01-22-2d660c519d2fcff95248da9f4fd9b37d61f9eb09_orion.ipk
+Size: 7764
+MD5Sum: 310f272683b716ff97d0c673c64384d5
+SHA256sum: 68fc7ef656778e3238aee61975035f55d1eb875be305dc88ff05aa54c94e20b4
+Description:  OpenWrt RPC daemon
+
+Package: uci
+Version: 2015-04-09.1-1
+Depends: libc, libuci
+Source: package/system/uci
+License: LGPL-2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 6454
+Filename: uci_2015-04-09.1-1_orion.ipk
+Size: 7138
+MD5Sum: 45e3d183f57877939491b845ab1cbd37
+SHA256sum: 8b1c36e2bdf69ed25e1409c1a19f152c749a1ec4b4dd99ee2fedf5b3593823ca
+Description:  Utility for the Unified Configuration Interface (UCI)
+
+Package: uhttpd-mod-ubus
+Version: 2015-03-30-b9178b9357798ae23a5724333cc6572d14f23958
+Depends: libc, uhttpd, libubus, libblobmsg-json
+Source: package/network/services/uhttpd
+License: ISC
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 5610
+Filename: uhttpd-mod-ubus_2015-03-30-b9178b9357798ae23a5724333cc6572d14f23958_orion.ipk
+Size: 6407
+MD5Sum: 4ed461c91149c621ba8d3b7898e32c6a
+SHA256sum: 2828906cb4ad47a008fc73fd364ccddb95894181f3657926648e94c9c986bd51
+Description:  The ubus plugin adds a HTTP/JSON RPC proxy for ubus and publishes the
+ session.* namespace and procedures.
+
+Package: uhttpd
+Version: 2015-03-30-b9178b9357798ae23a5724333cc6572d14f23958
+Depends: libc, libubox
+Source: package/network/services/uhttpd
+License: ISC
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 19624
+Filename: uhttpd_2015-03-30-b9178b9357798ae23a5724333cc6572d14f23958_orion.ipk
+Size: 20557
+MD5Sum: b932f4087410fcec60c019b91defecb2
+SHA256sum: 93ab297501559d773080b2d49158a8311133f1a3104edb71313388da40bf3984
+Description:  uHTTPd is a tiny single threaded HTTP server with TLS, CGI and Lua
+ support. It is intended as a drop-in replacement for the Busybox
+ HTTP daemon.
+
+Package: usign
+Version: 2015-04-06-395369a223b6c48e0d897d0c4c4d17236edbeea9
+Depends: libc
+Source: package/system/usign
+License: ISC
+Section: base
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 10318
+Filename: usign_2015-04-06-395369a223b6c48e0d897d0c4c4d17236edbeea9_orion.ipk
+Size: 11089
+MD5Sum: f9432264c635b258d2e244024de250fa
+SHA256sum: 72a5bf476fb619ea49d56fc1023c45a73322f1c14c9d7e12d0c9e33a4ab20eeb
+Description:  OpenWrt signature verification utility
+
+Package: wpad-mini
+Version: 2015-03-25-1
+Depends: libc, libnl-tiny, hostapd-common, libubus
+Source: package/network/services/hostapd
+License: BSD-3-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 235867
+Filename: wpad-mini_2015-03-25-1_orion.ipk
+Size: 236793
+MD5Sum: 9617ddee8985880fc845e1631d7eea02
+SHA256sum: e3f143627469cdca6715ed06459de4601e98109a9c823545f7081f8a3db1fb26
+Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (WPA-PSK only).
+
