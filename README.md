@@ -1,6 +1,6 @@
 # LEDE-OpenWRT-firmware-for-WRT350n-v2
 
-What the title says.
+With LuCI, relayd.
 
 .config provided only for LEDE r4983 revision.
 
