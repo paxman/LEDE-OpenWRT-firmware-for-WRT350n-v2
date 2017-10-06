@@ -1,0 +1,841 @@
+Package: base-files
+Version: 168-r49088
+Depends: libc, netifd, procd, jsonfilter, usign, fstools
+Source: package/base-files
+License: GPL-2.0
+Section: base
+Architecture: orion
+Installed-Size: 32179
+Filename: base-files_168-r49088_orion.ipk
+Size: 33141
+MD5Sum: a463c707a9ed4a6e586bf26c412f1734
+SHA256sum: 24e354bfdc8a82d11fcc31fcb2d10799918641fc1b842b8faea286001a751dfd
+Description:  This package contains a base filesystem and system scripts for OpenWrt.
+
+Package: busybox
+Version: 1.24.1-2
+Depends: libc
+Source: package/utils/busybox
+License: GPL-2.0
+LicenseFiles: LICENSE archival/libarchive/bz/LICENSE
+Section: base
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 221762
+Filename: busybox_1.24.1-2_orion.ipk
+Size: 222605
+MD5Sum: f9298a53f957e735f9f843668514c4d8
+SHA256sum: 6bb93d6c85243650f783ad7cced460c0bc1b52ce7a2fdf34f602e1453c38f04d
+Description:  The Swiss Army Knife of embedded Linux.
+ It slices, it dices, it makes Julian Fries.
+
+Package: dnsmasq
+Version: 2.75-6
+Depends: libc
+Source: package/network/services/dnsmasq
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: net
+Architecture: orion
+Installed-Size: 94130
+Filename: dnsmasq_2.75-6_orion.ipk
+Size: 94945
+MD5Sum: 44cf9c6b2a72d8db13f957b006e8740a
+SHA256sum: 366d5662f030651db5d2349ae936cf0a23e5ef14d7e9e289e0f2d2f157ac8e4b
+Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
+
+Package: dropbear
+Version: 2015.71-2
+Depends: libc
+Source: package/network/services/dropbear
+License: MIT
+LicenseFiles: LICENSE libtomcrypt/LICENSE libtommath/LICENSE
+Section: net
+Architecture: orion
+Installed-Size: 79135
+Filename: dropbear_2015.71-2_orion.ipk
+Size: 80001
+MD5Sum: 96663c4a2d823b50628765b02e8abafe
+SHA256sum: fdc4f32439d373cf3bf0c9e06c873af6e8edd262446b9a52dc3348257c3ac0d2
+Description:  A small SSH2 server/client designed for small memory environments.
+
+Package: firewall
+Version: 2016-01-29
+Depends: libc, libubox, libubus, libuci, libip4tc, libip6tc, libxtables, kmod-ipt-core, kmod-ipt-conntrack, kmod-ipt-nat
+Source: package/network/config/firewall
+License: ISC
+Section: net
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: orion
+Installed-Size: 37745
+Filename: firewall_2016-01-29_orion.ipk
+Size: 38668
+MD5Sum: 60ebf906388ac9c5ee73af3863db5a18
+SHA256sum: 77f658e5fba0614d709012de5ec1f367d08078832ab25b2d2c356f404652b6ba
+Description:  This package provides a config-compatible C implementation of the UCI firewall.
+
+Package: fstools
+Version: 2016-01-10-96415afecef35766332067f4205ef3b2c7561d21
+Depends: libc, ubox
+Source: package/system/fstools
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: orion
+Installed-Size: 15713
+Filename: fstools_2016-01-10-96415afecef35766332067f4205ef3b2c7561d21_orion.ipk
+Size: 16461
+MD5Sum: 6d3ba58e4ac3f32b8245237696b9b76d
+SHA256sum: f0b690f7f1ecab974c18c7babed090ed13ced5350fd8b7a2ce1e4d829cc8b1fe
+Description:  OpenWrt filesystem tools
+
+Package: hostapd-common
+Version: 2016-01-15-2
+Depends: libc
+Source: package/network/services/hostapd
+License: BSD-3-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 5288
+Filename: hostapd-common_2016-01-15-2_orion.ipk
+Size: 5978
+MD5Sum: 9ad69417318f64b979b98ee81d76061a
+SHA256sum: 07e76be6821b0d0f2b174c079f13abf9e2cb0ccf6c5b81f50fdd7bb939777d7b
+Description:  hostapd/wpa_supplicant common support files
+
+Package: ip6tables
+Version: 1.4.21-2
+Depends: libc, kmod-ip6tables, iptables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: net
+Architecture: orion
+Installed-Size: 190
+Filename: ip6tables_1.4.21-2_orion.ipk
+Size: 861
+MD5Sum: 3f7cee1e30f0e4286078aa1a33cbd574
+SHA256sum: b6d0e306e96628bf6d01a5888c6e45305035fc9311dbe39bd7f22a3e7fa1bd06
+Description:  IPv6 firewall administration tool
+
+Package: iptables
+Version: 1.4.21-2
+Depends: libc, kmod-ipt-core, libip4tc, libip6tc, libxtables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: net
+Architecture: orion
+Installed-Size: 22166
+Filename: iptables_1.4.21-2_orion.ipk
+Size: 22934
+MD5Sum: 5ebaa45fd78a2836d1ebdb98bebac4f7
+SHA256sum: c7955c9210e43bcf13e4f672731e67fe7d9df3621eeb9a6cec5c6e4691ad8b35
+Description:  IP firewall administration tool.
+ 
+ Matches:
+ - icmp
+ - tcp
+ - udp
+ - comment
+ - conntrack
+ - limit
+ - mac
+ - mark
+ - multiport
+ - set
+ - state
+ - time
+ 
+ Targets:
+ - ACCEPT
+ - CT
+ - DNAT
+ - DROP
+ - REJECT
+ - LOG
+ - MARK
+ - MASQUERADE
+ - REDIRECT
+ - SET
+ - SNAT
+ - TCPMSS
+ 
+ Tables:
+ - filter
+ - mangle
+ - nat
+ - raw
+ 
+
+Package: iw
+Version: 4.3-1
+Depends: libc, libnl-tiny
+Source: package/network/utils/iw
+License: GPL-2.0
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 33975
+Filename: iw_4.3-1_orion.ipk
+Size: 34810
+MD5Sum: 5968978a14341bf45094d3fa79e79e9e
+SHA256sum: 0ee83b42469a7affdf44ad46d19116eeac2963a745367181a2c1d784ad070645
+Description:  cfg80211 interface configuration utility
+
+Package: iwinfo
+Version: 2016-01-25-e4aca3910dff532ed878d0ceaf1ab6e8ad7719bf
+Depends: libc, libiwinfo
+Source: package/network/utils/iwinfo
+License: GPL-2.0
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: orion
+Installed-Size: 6128
+Filename: iwinfo_2016-01-25-e4aca3910dff532ed878d0ceaf1ab6e8ad7719bf_orion.ipk
+Size: 6871
+MD5Sum: 8789b82c3b7064c071fa8686bfc690dd
+SHA256sum: 5bc5558b047afbe3eec126ba8874b35a836039af4c1cb8aeaaea4a15fa525681
+Description:  Command line frontend for the wireless information library.
+
+Package: jshn
+Version: 2016-02-26-5326ce1046425154ab715387949728cfb09f4083
+Depends: libc, libjson-c, libubox, libblobmsg-json
+Source: package/libs/libubox
+License: ISC
+Section: utils
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 4717
+Filename: jshn_2016-02-26-5326ce1046425154ab715387949728cfb09f4083_orion.ipk
+Size: 5463
+MD5Sum: d24cb465c2b51736b4d997ccc5f4b7f9
+SHA256sum: a5daaa3312b64497faa15db0e933511da2be5fefd64c5f12009139a553242b1f
+Description:  Library for parsing and generating JSON from shell scripts
+
+Package: jsonfilter
+Version: 2014-06-19-cdc760c58077f44fc40adbbe41e1556a67c1b9a9
+Depends: libc, libubox, libjson-c
+Source: package/utils/jsonfilter
+License: ISC
+Section: base
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: orion
+Installed-Size: 7055
+Filename: jsonfilter_2014-06-19-cdc760c58077f44fc40adbbe41e1556a67c1b9a9_orion.ipk
+Size: 7818
+MD5Sum: 9791795bd8d267b1135b2da2cf794998
+SHA256sum: b830075592e245fbfc5cec98cc96ad600df9e3147540aa7bf78622b94c2507cb
+Description:  OpenWrt JSON filter utility
+
+Package: libblobmsg-json
+Version: 2016-02-26-5326ce1046425154ab715387949728cfb09f4083
+Depends: libc, libjson-c, libubox
+Source: package/libs/libubox
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 3152
+Filename: libblobmsg-json_2016-02-26-5326ce1046425154ab715387949728cfb09f4083_orion.ipk
+Size: 3896
+MD5Sum: 376b940b6d1c045a171e12b04bb12151
+SHA256sum: f7f9352fbf2a9a15bd7fa78e8fe1aba38c7425f0254ec3e66e4a2efc0e6ee736
+Description:  blobmsg <-> json conversion library
+
+Package: libgcc
+Version: 5.3.0-1
+Source: package/libs/toolchain
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 19684
+Filename: libgcc_5.3.0-1_orion.ipk
+Size: 20475
+MD5Sum: 44a4d8f8207afd9d3f0082e3309cd1ca
+SHA256sum: 2db2c36c709cd3e87fc63db3a3d2d5dc6a2f16a55622cb2dc5c4695e2f45fe76
+Description:  GCC support library
+
+Package: libip4tc
+Version: 1.4.21-2
+Depends: libc, libxtables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: orion
+Installed-Size: 16990
+Filename: libip4tc_1.4.21-2_orion.ipk
+Size: 17725
+MD5Sum: 8a51d8c214e02984dc415ce5234ddcbe
+SHA256sum: 9cf92061e406a7134f76c9124bd1238d118435b8b529d08c567d7d32ab7327c1
+Description:  IPv4 firewall - shared libiptc library
+
+Package: libip6tc
+Version: 1.4.21-2
+Depends: libc, libxtables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: orion
+Installed-Size: 16514
+Filename: libip6tc_1.4.21-2_orion.ipk
+Size: 17184
+MD5Sum: 3cc2a1f3709fc57e48e9230ac04a12be
+SHA256sum: 6598260b09c1bff576c6d0f21bddc489b2614d7551d48ca30e8528f493d0ce4b
+Description:  IPv6 firewall - shared libiptc library
+
+Package: libiwinfo-lua
+Version: 2016-01-25-e4aca3910dff532ed878d0ceaf1ab6e8ad7719bf
+Depends: libc, libiwinfo, liblua
+Source: package/network/utils/iwinfo
+License: GPL-2.0
+Section: lang
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: orion
+Installed-Size: 6255
+Filename: libiwinfo-lua_2016-01-25-e4aca3910dff532ed878d0ceaf1ab6e8ad7719bf_orion.ipk
+Size: 6976
+MD5Sum: 6aebb44517e9d980cd8a9dccb386ffb7
+SHA256sum: 97404d13517deb5be1270176f7e050958f9f3d9d4ad573aaed2c300c8446a006
+Description:  This is the Lua binding for the iwinfo library. It provides access to all enabled
+ backends.
+
+Package: libiwinfo
+Version: 2016-01-25-e4aca3910dff532ed878d0ceaf1ab6e8ad7719bf
+Depends: libc, libnl-tiny, libuci
+Source: package/network/utils/iwinfo
+License: GPL-2.0
+Section: libs
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: orion
+Installed-Size: 21348
+Filename: libiwinfo_2016-01-25-e4aca3910dff532ed878d0ceaf1ab6e8ad7719bf_orion.ipk
+Size: 22190
+MD5Sum: 388156c994d040cb2ce3a0b8fb63e6d1
+SHA256sum: 8571379d5f1af64ceaaec946e1189248a3516f5f70af21cbf5711119ddbbe3af
+Description:  Wireless information library with consistent interface for proprietary Broadcom,
+ madwifi, nl80211 and wext driver interfaces.
+
+Package: libjson-c
+Version: 0.12-1
+Depends: libc
+Source: package/libs/libjson-c
+License: MIT
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 13756
+Filename: libjson-c_0.12-1_orion.ipk
+Size: 14488
+MD5Sum: f83f722e51132c481b99d22817665d95
+SHA256sum: 9649193ff5046134776c5050ce580a69cf330fb0b522382112fefe2abea712a0
+Description:  This package contains a library for javascript object notation backends.
+
+Package: libjson-script
+Version: 2016-02-26-5326ce1046425154ab715387949728cfb09f4083
+Depends: libc, libubox
+Source: package/libs/libubox
+License: ISC
+Section: utils
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 4315
+Filename: libjson-script_2016-02-26-5326ce1046425154ab715387949728cfb09f4083_orion.ipk
+Size: 5024
+MD5Sum: b9c62310aaaa1b7fb66f0911ec6136bb
+SHA256sum: 2506af5f661bac252624401910590e543bc62bcdef71de0305fb7896f802c29e
+Description:  Minimalistic JSON based scripting engine
+
+Package: liblua
+Version: 5.1.5-1
+Depends: libc
+Source: package/utils/lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: libs
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: orion
+Installed-Size: 58844
+Filename: liblua_5.1.5-1_orion.ipk
+Size: 59590
+MD5Sum: 2efe6eae4e43584a4b5aed291d5ba7f1
+SHA256sum: 18eaf03e8a4507782fc9b1dfb26603bf2de034e1f7f02d72b4f82bdc7265d6c8
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua shared libraries, needed by other programs.
+
+Package: libnl-tiny
+Version: 0.1-5
+Depends: libc
+Source: package/libs/libnl-tiny
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 11569
+Filename: libnl-tiny_0.1-5_orion.ipk
+Size: 12302
+MD5Sum: 548dbfd0c757dceb427bbc1a2a389c67
+SHA256sum: 576eaddee59526a1e1c0a22faa9907a5febfbea0d115173ae383c2cf35afc509
+Description:  This package contains a stripped down version of libnl
+
+Package: libubox
+Version: 2016-02-26-5326ce1046425154ab715387949728cfb09f4083
+Depends: libc
+Source: package/libs/libubox
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 16509
+Filename: libubox_2016-02-26-5326ce1046425154ab715387949728cfb09f4083_orion.ipk
+Size: 17174
+MD5Sum: 012e1998dbbd8bf8a28d936ee36c53bb
+SHA256sum: bd806edd5a113303b860a5d56c76ef1c7e8d6e2e2265701d3290c97c7e807800
+Description:  Basic utility library
+
+Package: libubus-lua
+Version: 2016-01-26-619f3a160de4f417226b69039538882787b3811c
+Depends: libc, libubus, liblua
+Source: package/system/ubus
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 5147
+Filename: libubus-lua_2016-01-26-619f3a160de4f417226b69039538882787b3811c_orion.ipk
+Size: 5845
+MD5Sum: 1a5e9e1cb7f8ecef0da7f3e17f8a84d5
+SHA256sum: 4a3dbbe1e0fb1659a69f2912b35bfd5bf9c65bad451d855f6a3252ce7a3b9d71
+Description:  Lua binding for the OpenWrt RPC client
+
+Package: libubus
+Version: 2016-01-26-619f3a160de4f417226b69039538882787b3811c
+Depends: libc, libubox
+Source: package/system/ubus
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 9043
+Filename: libubus_2016-01-26-619f3a160de4f417226b69039538882787b3811c_orion.ipk
+Size: 9856
+MD5Sum: 87d89f51bb4726eb7ae684e70963ecf4
+SHA256sum: 616106bd7ad4b1795b656340cbf518e8465e90774fd67778a0c1024cdb3d74a7
+Description:  OpenWrt RPC client library
+
+Package: libuci-lua
+Version: 2016-02-02.1-1
+Depends: libc, libuci, liblua
+Source: package/system/uci
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 5441
+Filename: libuci-lua_2016-02-02.1-1_orion.ipk
+Size: 6121
+MD5Sum: f3b076710bf419b0dcda5a7bced72535
+SHA256sum: b1cdf5094c4260bff1e845eebeb34ad122e9954cebf367774b8e1c4da542eaec
+Description:  Lua plugin for UCI
+
+Package: libuci
+Version: 2016-02-02.1-1
+Depends: libc, libubox
+Source: package/system/uci
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 14641
+Filename: libuci_2016-02-02.1-1_orion.ipk
+Size: 15390
+MD5Sum: 3871b0de594af0d73489713e4e2b8d2c
+SHA256sum: fc144234b2ebedcdca991b5c6528c25296d55e6f4f55daec811b0cdd07d50c1d
+Description:  C library for the Unified Configuration Interface (UCI)
+
+Package: libuclient
+Version: 2016-01-28-2e0918c7e0612449024caaaa8d44fb2d7a33f5f3
+Depends: libc, libubox
+Source: package/libs/uclient
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 8363
+Filename: libuclient_2016-01-28-2e0918c7e0612449024caaaa8d44fb2d7a33f5f3_orion.ipk
+Size: 9154
+MD5Sum: cca19a09575dff627145842494bfd6ec
+SHA256sum: 714f79cf7c95b0a1f7f6c2e9b1668a7604492cd9a56ac035cf3c5300fd9a10c9
+Description:  HTTP/1.1 client library
+
+Package: libxtables
+Version: 1.4.21-2
+Depends: libc
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: orion
+Installed-Size: 36211
+Filename: libxtables_1.4.21-2_orion.ipk
+Size: 36912
+MD5Sum: a5d38d7c23dd4172f3495afe780c6d1d
+SHA256sum: dbd0ba9805f350288676770ea9eda9b1904c8a5c94400e5b42099ad52973650b
+Description:  IPv4/IPv6 firewall - shared xtables library
+
+Package: lua
+Version: 5.1.5-1
+Depends: libc, liblua
+Source: package/utils/lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: lang
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: orion
+Installed-Size: 4082
+Filename: lua_5.1.5-1_orion.ipk
+Size: 4876
+MD5Sum: ced8753daa0213ab63b3a92268edec7e
+SHA256sum: 239bedeba0194b3a4f3c4ccd7dcd40e7df9d44472016a5361f419d6a93ac5458
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua language interpreter.
+
+Package: mtd
+Version: 21
+Depends: libc, libubox
+Source: package/system/mtd
+License: GPL-2.0+
+Section: utils
+Architecture: orion
+Installed-Size: 11090
+Filename: mtd_21_orion.ipk
+Size: 11828
+MD5Sum: 5456977cb3dd6b228f4669d929038949
+SHA256sum: 5e9468b41ac2e507d6b3b3b7e5724f4927e6b90536a84abc88fc7fcf08a8bf2c
+Description:  This package contains an utility useful to upgrade from other firmware or 
+ older OpenWrt releases.
+
+Package: netifd
+Version: 2016-03-04-da687c2689f7ff2af1dccc9a428806dd15c3d554
+Depends: libc, libuci, libnl-tiny, libubus, ubus, ubusd, jshn, libubox
+Source: package/network/config/netifd
+License: GPL-2.0
+Section: base
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 61005
+Filename: netifd_2016-03-04-da687c2689f7ff2af1dccc9a428806dd15c3d554_orion.ipk
+Size: 61662
+MD5Sum: 4ea63c7722b376a792c2f497baba3559
+SHA256sum: 60cf89761ae86bb27cf98b653ae5c756c59045684a711b802326947f2429033c
+Description:  OpenWrt Network Interface Configuration Daemon
+
+Package: odhcp6c
+Version: 2015-09-04-dc186d6d2b0dd4ad23ca5fc69c00e81f796ff6d9
+Depends: libc
+Source: package/network/ipv6/odhcp6c
+License: GPL-2.0
+Section: net
+Maintainer: Steven Barth <steven@midlink.org>
+Architecture: orion
+Installed-Size: 22738
+Filename: odhcp6c_2015-09-04-dc186d6d2b0dd4ad23ca5fc69c00e81f796ff6d9_orion.ipk
+Size: 23546
+MD5Sum: 70a9543e63e6b557ef2b0bebd124b5c4
+SHA256sum: 74d4fdc000ec0d38a0a971a239f2d1514d2abee87d14c3d9e6fe2de78c071592
+Description:  Embedded DHCPv6-client for OpenWrt
+
+Package: odhcpd
+Version: 2015-11-19-01d3f9d64486ac1daa144848944e877e7f0cb762
+Depends: libc, libubox, libuci, libubus
+Source: package/network/services/odhcpd
+License: GPL-2.0
+Section: net
+Maintainer: Steven Barth <steven@midlink.org>
+Architecture: orion
+Installed-Size: 29312
+Filename: odhcpd_2015-11-19-01d3f9d64486ac1daa144848944e877e7f0cb762_orion.ipk
+Size: 30348
+MD5Sum: 2b249f1806a20a87e269d78d28b7e4f7
+SHA256sum: 9c931cdd0f7b25a71bc4808c4e073754d6fdcc05b5479151208ee96a1af819cf
+Description:  odhcpd is a daemon for serving and relaying IP management protocols to
+ configure clients and downstream routers. It tries to follow the RFC 6204
+ requirements for IPv6 home routers.
+ 
+ odhcpd provides server services for DHCP, RA, stateless and stateful DHCPv6,
+ prefix delegation and can be used to relay RA, DHCPv6 and NDP between routed
+ (non-bridged) interfaces in case no delegated prefixes are available.
+
+Package: opkg
+Version: 9c97d5ecd795709c8584e972bfdf3aee3a5b846d-12
+Depends: libc, uclient-fetch
+Source: package/system/opkg
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: base
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: orion
+Installed-Size: 57974
+Filename: opkg_9c97d5ecd795709c8584e972bfdf3aee3a5b846d-12_orion.ipk
+Size: 59008
+MD5Sum: b9629864bfe107e874b3128f19e8c9bd
+SHA256sum: 7aa8bd1e0724c5e2ae6d98bf751c98371449aae00aa33a190ba9ff21fa74b96b
+Description:  Lightweight package management system
+ opkg is the opkg Package Management System, for handling
+ installation and removal of packages on a system. It can
+ recursively follow dependencies and download all packages
+ necessary to install a particular package.
+ 
+ opkg knows how to install both .ipk and .deb packages.
+
+Package: ppp-mod-pppoe
+Version: 2.4.7-8
+Depends: libc, kmod-pppoe
+Source: package/network/services/ppp
+License: BSD-4-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 9709
+Filename: ppp-mod-pppoe_2.4.7-8_orion.ipk
+Size: 10488
+MD5Sum: 9a76925870c40f5a8429365e95e74f70
+SHA256sum: e40989c38e32bcf8b6d418ff9576cd5c5f1c7cc51ba6f91daafd00b4aa3253c1
+Description:  This package contains a PPPoE (PPP over Ethernet) plugin for ppp.
+
+Package: ppp
+Version: 2.4.7-8
+Depends: libc, kmod-ppp
+Source: package/network/services/ppp
+License: BSD-4-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 104761
+Filename: ppp_2.4.7-8_orion.ipk
+Size: 105596
+MD5Sum: 9497a7c39ff6f619868ca717cbeb8803
+SHA256sum: e95b27d137c6c91398ba99da19495746ad2ea1f643bb3c923f40d8908a0fd1fe
+Description:  This package contains the PPP (Point-to-Point Protocol) daemon.
+
+Package: procd
+Version: 2016-03-09-b12bb150ed38a4409bef5127c77b060ee616b860
+Depends: libc, ubusd, ubus, libjson-script, ubox, libubox, libubus
+Source: package/system/procd
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: orion
+Installed-Size: 34715
+Filename: procd_2016-03-09-b12bb150ed38a4409bef5127c77b060ee616b860_orion.ipk
+Size: 35351
+MD5Sum: d167aff93dffc2fabfb3e9ab1c94d12b
+SHA256sum: 8000f49fe7c43ddf19528656ccbe0638cd617d8b4b5fe185b5d1df40403bae48
+Description:  OpenWrt system process manager
+
+Package: relayd
+Version: 2016-02-07-ad0b25ad74345d367c62311e14b279f5ccb8ef13
+Depends: libc, libubox
+Source: package/network/services/relayd
+License: GPL-2.0
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 9466
+Filename: relayd_2016-02-07-ad0b25ad74345d367c62311e14b279f5ccb8ef13_orion.ipk
+Size: 10250
+MD5Sum: fb7e79066bbfff89905e037ba9b31e25
+SHA256sum: 8634da9c9953ecacdaa802244a22326f976a8354ed3ec33daed023e56cd5d62b
+Description:  Transparent routing / relay daemon
+
+Package: rpcd
+Version: 2015-01-10-f00890cd6eb47ad9bb5da0fb6c50aedc8406e7c5
+Depends: libc, libubus, libubox, libuci, libblobmsg-json
+Source: package/system/rpcd
+License: ISC
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: orion
+Installed-Size: 17105
+Filename: rpcd_2015-01-10-f00890cd6eb47ad9bb5da0fb6c50aedc8406e7c5_orion.ipk
+Size: 17959
+MD5Sum: b2b812bd5360963b7b5288cb0e3d64ee
+SHA256sum: 0329d399597202381137a55a8fa6f36d4de50c717669ff0a55ffefd2b23dac90
+Description:  This package provides the UBUS RPC backend server to expose various
+ functionality to frontend programs via JSON-RPC.
+
+Package: swconfig
+Version: 10
+Depends: libc, libuci, libnl-tiny
+Source: package/network/config/swconfig
+License: GPL-2.0
+Section: base
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 9618
+Filename: swconfig_10_orion.ipk
+Size: 10382
+MD5Sum: 52f22f762640121cc6d1a26eaac55436
+SHA256sum: 50661d3b75c1d6412195b145a7803fb5a8de3e0d99f3fdee11d576a2350300d4
+Description:  Switch configuration utility
+
+Package: uboot-envtools
+Version: 2015.10-1
+Depends: libc
+Source: package/boot/uboot-envtools
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Section: utils
+Architecture: orion
+Installed-Size: 10363
+Filename: uboot-envtools_2015.10-1_orion.ipk
+Size: 11127
+MD5Sum: 5a8081c1ea23bbbec9968a60c83fbf5b
+SHA256sum: c1a0628eeaec8b2b3e3b57236a07abc394866504717b26dd88c1367193929c99
+Description:  This package includes tools to read and modify U-Boot bootloader environment.
+
+Package: ubox
+Version: 2016-03-07-fd4bb41ee7ab136d25609c2a917beea5d52b723b
+Depends: libc, libubox, ubusd, ubus, libubus, libuci
+Source: package/system/ubox
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: orion
+Installed-Size: 20970
+Filename: ubox_2016-03-07-fd4bb41ee7ab136d25609c2a917beea5d52b723b_orion.ipk
+Size: 21750
+MD5Sum: 00f741e7a195ceeb913e1a7b5a41bacd
+SHA256sum: d64282e6dcfe3b1697b67e043f40a90c7334be22d9f7aacea834456b54c10373
+Description:  OpenWrt system helper toolbox
+
+Package: ubus
+Version: 2016-01-26-619f3a160de4f417226b69039538882787b3811c
+Depends: libc, libubus, libblobmsg-json, ubusd
+Source: package/system/ubus
+License: LGPL-2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 4744
+Filename: ubus_2016-01-26-619f3a160de4f417226b69039538882787b3811c_orion.ipk
+Size: 5454
+MD5Sum: 8a43514d9cdee0bf1ea52ed37a2787be
+SHA256sum: c23bf04a11f4378c514c20c65ddf630bf8ea7bd6d1fd105fe4539ea5a978ce52
+Description:  OpenWrt RPC client utility
+
+Package: ubusd
+Version: 2016-01-26-619f3a160de4f417226b69039538882787b3811c
+Depends: libc, libubox, libblobmsg-json
+Source: package/system/ubus
+License: LGPL-2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 9832
+Filename: ubusd_2016-01-26-619f3a160de4f417226b69039538882787b3811c_orion.ipk
+Size: 10605
+MD5Sum: b1412dba76747eee1626e1e88c664e35
+SHA256sum: 830e4678c5f2a484af23fa73f3f5016aeb227ca568ad7f88321e376a798ca7c1
+Description:  OpenWrt RPC daemon
+
+Package: uci
+Version: 2016-02-02.1-1
+Depends: libc, libuci
+Source: package/system/uci
+License: LGPL-2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 6352
+Filename: uci_2016-02-02.1-1_orion.ipk
+Size: 7075
+MD5Sum: 2b57d4f680852c8e3fcf8daa6446efca
+SHA256sum: 02fb83db859fd011d1edc3defaaa4a2f38728b1e2843783db8e3c028640ae5af
+Description:  Utility for the Unified Configuration Interface (UCI)
+
+Package: uclient-fetch
+Version: 2016-01-28-2e0918c7e0612449024caaaa8d44fb2d7a33f5f3
+Depends: libc, libuclient
+Source: package/libs/uclient
+License: ISC
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 6654
+Filename: uclient-fetch_2016-01-28-2e0918c7e0612449024caaaa8d44fb2d7a33f5f3_orion.ipk
+Size: 7291
+MD5Sum: 82aeae1f963f18a41a1c657d5b3ead33
+SHA256sum: 6468a58d25580128906014a85f8d063b87a2d54c40d2771be7b9c17836492af0
+Description:  Tiny wget replacement using libuclient
+
+Package: uhttpd-mod-ubus
+Version: 2015-11-08-fe01ef3f52adae9da38ef47926cd50974af5d6b7
+Depends: libc, uhttpd, libubus, libblobmsg-json
+Source: package/network/services/uhttpd
+License: ISC
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 5593
+Filename: uhttpd-mod-ubus_2015-11-08-fe01ef3f52adae9da38ef47926cd50974af5d6b7_orion.ipk
+Size: 6407
+MD5Sum: e223c43a22e43ab8c92de06b38749ad5
+SHA256sum: 45812e0151d069e2e0adfc5bdec2f4fb10ac10f5baa5ba706713b8ff00f2437d
+Description:  The ubus plugin adds a HTTP/JSON RPC proxy for ubus and publishes the
+ session.* namespace and procedures.
+
+Package: uhttpd
+Version: 2015-11-08-fe01ef3f52adae9da38ef47926cd50974af5d6b7
+Depends: libc, libubox, libblobmsg-json, libjson-script
+Source: package/network/services/uhttpd
+License: ISC
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 21507
+Filename: uhttpd_2015-11-08-fe01ef3f52adae9da38ef47926cd50974af5d6b7_orion.ipk
+Size: 22344
+MD5Sum: 8ea4c8e97b20846b496b456c7e1f7fa8
+SHA256sum: acdc94fb3f6496f933da164ef723c455e3ee171404ca1e06fddb738f61db6491
+Description:  uHTTPd is a tiny single threaded HTTP server with TLS, CGI and Lua
+ support. It is intended as a drop-in replacement for the Busybox
+ HTTP daemon.
+
+Package: usign
+Version: 2015-05-08-cf8dcdb8a4e874c77f3e9a8e9b643e8c17b19131
+Depends: libc, libubox
+Source: package/system/usign
+License: ISC
+Section: base
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 9975
+Filename: usign_2015-05-08-cf8dcdb8a4e874c77f3e9a8e9b643e8c17b19131_orion.ipk
+Size: 10748
+MD5Sum: 722729d76784ce5911696d015e47dc3b
+SHA256sum: 22e4a547cd2c548962986e046d60be13d42c8fadd8525eb696f0fd7be0250e63
+Description:  OpenWrt signature verification utility
+
+Package: wpad-mini
+Version: 2016-01-15-2
+Depends: libc, libnl-tiny, hostapd-common, libubus
+Source: package/network/services/hostapd
+License: BSD-3-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 238970
+Filename: wpad-mini_2016-01-15-2_orion.ipk
+Size: 239818
+MD5Sum: 5d6c13664092ccc6fe914ba7a8be8bca
+SHA256sum: 84400e0b44e4330b19463a0e0eac3c80f6ea0409d2f706806ebb850ab7aca480
+Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (WPA-PSK only).
+

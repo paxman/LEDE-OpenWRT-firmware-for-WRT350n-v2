@@ -1,0 +1,456 @@
+Package: kmod-ath9k-common
+Version: 4.1.20+2016-01-10-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), kmod-ath
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 129978
+Filename: kmod-ath9k-common_4.1.20+2016-01-10-1_orion.ipk
+Size: 128729
+MD5Sum: 94a7b8c20da3f607c0a5567fe7bd3a2a
+SHA256sum: ad8a3f841a91b3d6319b8f355ca3ac311a7f6d151234737117208667685bc7f1
+Description:  Atheros 802.11n wireless devices (common code for ath9k and ath9k_htc)
+
+Package: kmod-ath9k
+Version: 4.1.20+2016-01-10-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), kmod-ath9k-common
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 56320
+Filename: kmod-ath9k_4.1.20+2016-01-10-1_orion.ipk
+Size: 57102
+MD5Sum: 06040efdd25e430f09abf6ae7929b1d9
+SHA256sum: a6590c432230a43325b34b6761ca697242f798f8a9ff4e6dbcfa8db6314db9d6
+Description:  This module adds support for wireless adapters based on
+ Atheros IEEE 802.11n AR5008 and AR9001 family of chipsets.
+
+Package: kmod-ath
+Version: 4.1.20+2016-01-10-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), kmod-mac80211
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 12052
+Filename: kmod-ath_4.1.20+2016-01-10-1_orion.ipk
+Size: 12854
+MD5Sum: 9beb31a6ee12c2355c6f1cf02f2df449
+SHA256sum: 2946da4b35a32691fe9b4491dec060aeef179e65f901d6792a4d8cd2b4e3ceec
+Description:  This module contains some common parts needed by Atheros Wireless drivers.
+
+Package: kmod-cfg80211
+Version: 4.1.20+2016-01-10-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), iw
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 111682
+Filename: kmod-cfg80211_4.1.20+2016-01-10-1_orion.ipk
+Size: 112577
+MD5Sum: eb9edf5049607f96193c82d4e87df0bd
+SHA256sum: efad6b0719e2103a9e97c923e6ac5b90f5c2662429fdeb49473134ec89ad90c9
+Description:  cfg80211 is the Linux wireless LAN (802.11) configuration API.
+
+Package: kmod-crypto-aead
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 3338
+Filename: kmod-crypto-aead_4.1.20-1_orion.ipk
+Size: 4085
+MD5Sum: 2ff29078891d58ff510f7fd49d598d78
+SHA256sum: 6623d80d25c52a883a0d2339881407ccec04f18e82944a52674ebd7b45b1c43d
+Description:  CryptoAPI AEAD support
+
+Package: kmod-crypto-hash
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 220
+Filename: kmod-crypto-hash_4.1.20-1_orion.ipk
+Size: 973
+MD5Sum: ef98e5e83566e20912d543fe67a40005
+SHA256sum: f32c1360d99494515f71eeaa62b7c4133bbc71da81d26f258184a97925a5a4c5
+Description:  CryptoAPI hash support
+
+Package: kmod-crypto-manager
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), kmod-crypto-aead, kmod-crypto-hash, kmod-crypto-pcompress
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 222
+Filename: kmod-crypto-manager_4.1.20-1_orion.ipk
+Size: 998
+MD5Sum: 517a97206c57ff9354ff4dd2381c05ef
+SHA256sum: e2f195f816d62f8274722b1f970a603351f93690426af52cc001a48961870c74
+Description:  CryptoAPI algorithm manager
+
+Package: kmod-crypto-mv-cesa
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), kmod-crypto-manager
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 180
+Filename: kmod-crypto-mv-cesa_4.1.20-1_orion.ipk
+Size: 942
+MD5Sum: 4ebce61d274f004dd8f1093993c37299
+SHA256sum: 9b830e37046962627347cb9cc7daf041ae532e3d8d0081ba439ccacb1f7decd9
+Description:  Marvell crypto engine
+
+Package: kmod-crypto-pcompress
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 102
+Filename: kmod-crypto-pcompress_4.1.20-1_orion.ipk
+Size: 812
+MD5Sum: 254e50bb19599c4a7c1605f22e4211b1
+SHA256sum: 959df4c525ac3e13aebf894fd9606018b021926e16465e3b5bd713f7b4224b4b
+Description:  CryptoAPI Partial (de)compression operations
+
+Package: kmod-gpio-button-hotplug
+Version: 4.1.20-2
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4)
+Source: package/kernel/gpio-button-hotplug
+Section: kernel
+Architecture: orion
+Installed-Size: 3820
+Filename: kmod-gpio-button-hotplug_4.1.20-2_orion.ipk
+Size: 4723
+MD5Sum: d816539877e0c5ee427b5d7520ba8ed6
+SHA256sum: 19c1a224ee1e7e1fc520f841a7e3cc8589b46f35ee9415a9c47d472f74446aaf
+Description:  This is a replacement for the following in-kernel drivers:
+ 1) gpio_keys (KEYBOARD_GPIO)
+ 2) gpio_keys_polled (KEYBOARD_GPIO_POLLED)
+ 
+ Instead of generating input events (like in-kernel drivers do) it generates
+ uevent-s and broadcasts them. This allows disabling input subsystem which is
+ an overkill for OpenWrt simple needs.
+
+Package: kmod-i2c-core
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 13404
+Filename: kmod-i2c-core_4.1.20-1_orion.ipk
+Size: 14234
+MD5Sum: 2f951485348bb1a4687a4e7a93ace5ca
+SHA256sum: c15e27a60b10e7972115be95dd30d65f5ed295e50cdfa0b4310e8c4d4c17a48b
+Description:  Kernel modules for I2C support
+
+Package: kmod-i2c-mv64xxx
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), kmod-i2c-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 3748
+Filename: kmod-i2c-mv64xxx_4.1.20-1_orion.ipk
+Size: 4552
+MD5Sum: 4956093ada013bb774581bc23d9467ec
+SHA256sum: 353f926eddd244bef371eed8b1e9624002a8884c5c250abffcdb2615363d171f
+Description:  Kernel module for I2C interface on the Kirkwood, Orion and Armada XP/370
+ family processors
+
+Package: kmod-ip6tables
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), kmod-nf-ipt6, kmod-ipt-core, kmod-ipt-conntrack
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 7301
+Filename: kmod-ip6tables_4.1.20-1_orion.ipk
+Size: 8106
+MD5Sum: 615eabc0129c61fa92cb7d77411eaebd
+SHA256sum: ee1cff410c00327474625f9a1e26e271ac42ce2c11c62858e97385de0a8930c5
+Description:  Netfilter IPv6 firewalling support
+
+Package: kmod-ipt-conntrack
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), kmod-ipt-core, kmod-nf-conntrack
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 4695
+Filename: kmod-ipt-conntrack_4.1.20-1_orion.ipk
+Size: 5518
+MD5Sum: 5730bc9140ba1d1db9054334be7ab037
+SHA256sum: 79221a8e3d323827d1e53813d87232f0467703a4cc412f8f0c2398dbfa3f61d6
+Description:  Netfilter (IPv4) kernel modules for connection tracking
+ Includes:
+ - conntrack
+ - defrag
+ - iptables_raw
+ - NOTRACK
+ - state
+
+Package: kmod-ipt-core
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), kmod-nf-ipt
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 14522
+Filename: kmod-ipt-core_4.1.20-1_orion.ipk
+Size: 15447
+MD5Sum: a23a3067b4f725dbce0eb2d7fc7c8061
+SHA256sum: e7360873d8c53a4ee91c1c02288cfd3ec21601b29034e1545dbfc8d05007c256
+Description:  Netfilter core kernel modules
+ Includes:
+ - comment
+ - limit
+ - LOG
+ - mac
+ - multiport
+ - REJECT
+ - TCPMSS
+
+Package: kmod-ipt-nat
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), kmod-ipt-core, kmod-nf-nat
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 3673
+Filename: kmod-ipt-nat_4.1.20-1_orion.ipk
+Size: 4494
+MD5Sum: e067dda5154ef9d6d22ea97df90b58ed
+SHA256sum: 37e847c487fc0f6d0c2925b2dc61d2b0d97687a0dcb8beb44b5d9caecd4f1c81
+Description:  Netfilter (IPv4) kernel modules for basic NAT targets
+ Includes:
+ - MASQUERADE
+
+Package: kmod-lib-crc-ccitt
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 1349
+Filename: kmod-lib-crc-ccitt_4.1.20-1_orion.ipk
+Size: 2130
+MD5Sum: fd8b4fd31b197dbef6b25bb84858c631
+SHA256sum: 85e07fea230440ebfb0b3e02b2e834e1dc138909eef01749292dbb2c19436e8b
+Description:  Kernel module for CRC-CCITT support
+
+Package: kmod-mac80211
+Version: 4.1.20+2016-01-10-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), kmod-cfg80211, hostapd-common
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: orion
+Installed-Size: 213231
+Filename: kmod-mac80211_4.1.20+2016-01-10-1_orion.ipk
+Size: 213650
+MD5Sum: 4eaa03ce06e1956f71e7c34a8c1ae648
+SHA256sum: 30ce8f1e53595965cb1e139d8c143784537099e1c7d7f49ffd16bd5691fa33c8
+Description:  Generic IEEE 802.11 Networking Stack (mac80211)
+
+Package: kmod-nf-conntrack6
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), kmod-nf-conntrack
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 8167
+Filename: kmod-nf-conntrack6_4.1.20-1_orion.ipk
+Size: 9013
+MD5Sum: e454586a18479c4fe9b3bfe6c5f9dc0c
+SHA256sum: 619ea79f3fac23c9847c1bf315a27be1f00f30efd97c6e416cabadc3575b8bd9
+Description:  Netfilter IPv6 connection tracking
+
+Package: kmod-nf-conntrack
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 32713
+Filename: kmod-nf-conntrack_4.1.20-1_orion.ipk
+Size: 33643
+MD5Sum: c4208f5bde58b64a88716beb4307c93f
+SHA256sum: b373639dbecf113a5f74e1499fead8c822ab5baef184e7cefe9af7fc78ddb6a4
+Description:  Netfilter connection tracking
+
+Package: kmod-nf-ipt6
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), kmod-nf-ipt, kmod-nf-conntrack6
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 6963
+Filename: kmod-nf-ipt6_4.1.20-1_orion.ipk
+Size: 7771
+MD5Sum: 9acdd1b72ccf192b36e07eb2edb93873
+SHA256sum: 989750ac9091e3e138f0448e04b032aa079c84e03179b62b6912576cadafb8c9
+Description:  Ip6tables core
+
+Package: kmod-nf-ipt
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 12486
+Filename: kmod-nf-ipt_4.1.20-1_orion.ipk
+Size: 13300
+MD5Sum: 8cd0469f9e411c8be0641cd62db55a24
+SHA256sum: 2d4d14a0db2eb9288b21ec7032a2dfdda6f3ffc2d423f550c357af8b86c4e982
+Description:  Iptables core
+
+Package: kmod-nf-nat
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), kmod-nf-conntrack, kmod-nf-ipt
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 9686
+Filename: kmod-nf-nat_4.1.20-1_orion.ipk
+Size: 10552
+MD5Sum: 0bcfab5e6f124524ea8d4b91a48da1eb
+SHA256sum: 82fa4a2d8261575dabc6d9f5cc5d39717cdae46c726ebe0711c2e745ea7c774e
+Description:  Netfilter NAT
+
+Package: kmod-nf-nathelper
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), kmod-nf-nat
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 4919
+Filename: kmod-nf-nathelper_4.1.20-1_orion.ipk
+Size: 5721
+MD5Sum: bb6a1fba60efa100a0ac4ed64a701969
+SHA256sum: bc31f1b582d122a318e982cf6aabce3d0945e9cbe0c4a1caf0ea419abdf38661
+Description:  Default Netfilter (IPv4) Conntrack and NAT helpers
+ Includes:
+ - ftp
+ - irc
+ - tftp
+
+Package: kmod-nls-base
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 3012
+Filename: kmod-nls-base_4.1.20-1_orion.ipk
+Size: 3720
+MD5Sum: cc8bba2f8a427365696b145688463e38
+SHA256sum: 66f16ba522c2ffe5f0d17bb523f7c16c92a15b79a22ddff761f4911f190b6fcd
+Description:  Kernel module for NLS (Native Language Support)
+
+Package: kmod-ppp
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), kmod-lib-crc-ccitt, kmod-slhc
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 17904
+Filename: kmod-ppp_4.1.20-1_orion.ipk
+Size: 18753
+MD5Sum: 392e8a56d1efa0f20cc9d1ec70fa8102
+SHA256sum: f53322477a861b3fba679d66df5c9a005467d89234a5e8185385f370018cf50f
+Description:  Kernel modules for PPP support
+
+Package: kmod-pppoe
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), kmod-ppp, kmod-pppox
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 6251
+Filename: kmod-pppoe_4.1.20-1_orion.ipk
+Size: 7069
+MD5Sum: 6d2d63f958d031affbfde42098dbf8e9
+SHA256sum: 2bde423ba7fff87640f6277093de7782f15b97000dcac5cf946ad8565aff3ee8
+Description:  Kernel module for PPPoE (PPP over Ethernet) support
+
+Package: kmod-pppox
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), kmod-ppp
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 1453
+Filename: kmod-pppox_4.1.20-1_orion.ipk
+Size: 2181
+MD5Sum: ebc3feaf0625d3d94719453bdea00558
+SHA256sum: 3eedec3716696ee11eb1c8622cff8ab9a7b46560ea402aa61dd15c36cc6db2d2
+Description:  Kernel helper module for PPPoE and PPTP support
+
+Package: kmod-slhc
+Version: 4.1.20-1
+Depends: kernel (=4.1.20-1-b711aa90a1e08355d966d4017722c7d4), kmod-lib-crc-ccitt
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: orion
+Installed-Size: 3385
+Filename: kmod-slhc_4.1.20-1_orion.ipk
+Size: 4128
+MD5Sum: 1cee5da04d6abde45d34f56c1829536d
+SHA256sum: bc68696301d7d243daf0b1307c58f74f562a10eddccb0f9309c00032eb4bd394
+Description:  Serial Line Header Compression
+

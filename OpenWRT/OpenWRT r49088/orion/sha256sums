@@ -1,0 +1,7 @@
+SHA256(openwrt-wn802t-squashfs-factory.img)= 19081c8f538e980e639bc2f200219cde55a5167f1af6567029a8cc8d5081939e
+SHA256(openwrt-wn802t-squashfs-sysupgrade.img)= 0061ac65917ca2847788b1d793c94a9b2c0ec00eddb4dee526d4cf313552120e
+SHA256(openwrt-wnr854t-squashfs-factory.img)= f311e2bb38aaa5272c65a70e2c9c75424274b5e7fe54ec270ee4bf8c5cbf2f2a
+SHA256(openwrt-wnr854t-squashfs-sysupgrade.img)= 0aa7759436546f5879253b3915362d26b4efcb6372d27718c06c2138c4f40730
+SHA256(openwrt-wrt350nv2-squashfs-factory.img)= ef2e3af46e78261b97c31c9d4308fa0c709605bf3545c10186795bbe775db5cf
+SHA256(openwrt-wrt350nv2-squashfs-recovery.bin)= 0fc2753a26eba93649a0440c51c157bcdd185901b68091a70d744f0545676516
+SHA256(openwrt-wrt350nv2-squashfs-sysupgrade.img)= 6340c02edd50b654cab7adcb51997e4247005626f26e69c0b629f850b8355b53
