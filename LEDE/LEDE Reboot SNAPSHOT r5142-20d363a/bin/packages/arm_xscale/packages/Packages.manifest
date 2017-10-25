@@ -1,0 +1,35 @@
+Package: libsqlite3
+Version: 3200100-1
+Depends: libc, libpthread
+Source: feeds/packages/libs/sqlite3
+License: PUBLICDOMAIN
+Section: libs
+Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
+Architecture: arm_xscale
+Installed-Size: 340239
+Filename: libsqlite3_3200100-1_arm_xscale.ipk
+Size: 340765
+SHA256sum: 39b3666dca20bfccd8e5a4ecd2f3a00aaebf88691db81d0da2a67a30941cdc3a
+Description:  SQLite is a small C library that implements a self-contained, embeddable,
+ zero-configuration SQL database engine.
+ This package contains the SQLite (v3.x) shared library, used by other
+ programs.
+
+Package: reaver
+Version: 1.4-3
+Depends: libc, libpcap, libsqlite3
+Source: feeds/packages/net/reaver
+License: GPL-2.0
+Section: net
+Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
+Architecture: arm_xscale
+Installed-Size: 183121
+Filename: reaver_1.4-3_arm_xscale.ipk
+Size: 151346
+SHA256sum: a99d45a60683f288aa7df5db5de5b67aea4bcd2004010acc1e085c4742a8099e
+Description:  Reaver targets the external registrar functionality mandated by the WiFi
+ Protected Setup specification.
+ Access points will provide authenticated registrars with their current
+ wireless configuration (including the WPA PSK), and also accept a new
+ configuration from the registrar.
+
