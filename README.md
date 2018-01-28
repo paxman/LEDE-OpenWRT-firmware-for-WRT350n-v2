@@ -2,6 +2,6 @@
 
 With LuCI, relayd.
 
-.config provided only for LEDE r4983 revision.
+.config provided for LEDE r4983 and above.
 
 Firmware provided as is, use it at your own risk.
