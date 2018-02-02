@@ -1,0 +1,714 @@
+Package: busybox
+Version: 1.27.2-1
+Depends: libc
+Provides: ip
+Alternatives: 100:/bin/kill:/bin/busybox, 100:/bin/ps:/bin/busybox, 100:/sbin/ip:/bin/busybox, 100:/usr/bin/free:/bin/busybox, 100:/usr/bin/pgrep:/bin/busybox, 100:/usr/bin/top:/bin/busybox, 100:/usr/bin/uptime:/bin/busybox
+Source: package/utils/busybox
+License: GPL-2.0
+LicenseFiles: LICENSE archival/libarchive/bz/LICENSE
+Section: base
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 233910
+Filename: busybox_1.27.2-1_arm_xscale.ipk
+Size: 234324
+SHA256sum: 4808cc06a286fe75bd52f7ef721cbee363a753821d4f548012941c9b77c9a53e
+Description:  The Swiss Army Knife of embedded Linux.
+ It slices, it dices, it makes Julian Fries.
+
+Package: dnsmasq
+Version: 2.78-2
+Depends: libc, libubus
+Source: package/network/services/dnsmasq
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: net
+Require-User: dnsmasq=453:dnsmasq=453
+Architecture: arm_xscale
+Installed-Size: 108074
+Filename: dnsmasq_2.78-2_arm_xscale.ipk
+Size: 108727
+SHA256sum: 9977c21a3b01f0f034707bc1662144905f938d478900257401bd37ca1a2555c0
+Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
+
+Package: dropbear
+Version: 2017.75-4
+Depends: libc
+Source: package/network/services/dropbear
+License: MIT
+LicenseFiles: LICENSE libtomcrypt/LICENSE libtommath/LICENSE
+Section: net
+Architecture: arm_xscale
+Installed-Size: 82901
+Filename: dropbear_2017.75-4_arm_xscale.ipk
+Size: 83677
+SHA256sum: 9792e67b904074f215cde99fb597b94282989de4795aff1fd17a5a602e5ec0cc
+Description:  A small SSH2 server/client designed for small memory environments.
+
+Package: firewall
+Version: 2017-05-27-a4d98aea-1
+Depends: libc, libubox, libubus, libuci, libip4tc, libip6tc, libxtables, kmod-ipt-core, kmod-ipt-conntrack, kmod-ipt-nat
+Source: package/network/config/firewall
+License: ISC
+Section: net
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_xscale
+Installed-Size: 41591
+Filename: firewall_2017-05-27-a4d98aea-1_arm_xscale.ipk
+Size: 42304
+SHA256sum: 45fbae719b69b9073d91efbf71b9e88a0d8aabc3721f2a6c46bb3d7ebd3e37fa
+Description:  This package provides a config-compatible C implementation of the UCI firewall.
+
+Package: hostapd-common
+Version: 2017-08-24-c2d4f2eb-3
+Depends: libc
+Source: package/network/services/hostapd
+License: BSD-3-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 5652
+Filename: hostapd-common_2017-08-24-c2d4f2eb-3_arm_xscale.ipk
+Size: 6382
+SHA256sum: b4a7a3e7d9fd09a942c1d4b21283190a349d285b4cef243458144b90c570fcde
+Description:  hostapd/wpa_supplicant common support files
+
+Package: ip6tables
+Version: 1.6.1-1
+Depends: libc, kmod-ip6tables, iptables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: net
+Architecture: arm_xscale
+Installed-Size: 211
+Filename: ip6tables_1.6.1-1_arm_xscale.ipk
+Size: 912
+SHA256sum: e400bd45d4a99f4073c4f82bc375fc2a5443b9bd7a9153a8d1b249ac15400c7f
+Description:  IPv6 firewall administration tool
+
+Package: iptables
+Version: 1.6.1-1
+Depends: libc, kmod-ipt-core, libip4tc, libip6tc, libxtables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: net
+Architecture: arm_xscale
+Installed-Size: 23509
+Filename: iptables_1.6.1-1_arm_xscale.ipk
+Size: 24258
+SHA256sum: c3e544e3da54cb3574e1d3e8cfce3f7ddb20425d20d07d476d2aa1d4485d582e
+Description:  IP firewall administration tool.
+ 
+ Matches:
+ - icmp
+ - tcp
+ - udp
+ - comment
+ - conntrack
+ - limit
+ - mac
+ - mark
+ - multiport
+ - set
+ - state
+ - time
+ 
+ Targets:
+ - ACCEPT
+ - CT
+ - DNAT
+ - DROP
+ - REJECT
+ - LOG
+ - MARK
+ - MASQUERADE
+ - REDIRECT
+ - SET
+ - SNAT
+ - TCPMSS
+ 
+ Tables:
+ - filter
+ - mangle
+ - nat
+ - raw
+ 
+
+Package: iw
+Version: 4.9-1
+Depends: libc, libnl-tiny
+Source: package/network/utils/iw
+License: GPL-2.0
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 37385
+Filename: iw_4.9-1_arm_xscale.ipk
+Size: 38220
+SHA256sum: 42f92168b6af4f11cd8319d6f702f28557725b49d6770f6229d9d6f8016b3ced
+Description:  cfg80211 interface configuration utility
+
+Package: jshn
+Version: 2017-09-29-632688e8-1
+Depends: libc, libjson-c, libubox, libblobmsg-json
+Source: package/libs/libubox
+License: ISC
+Section: utils
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 5061
+Filename: jshn_2017-09-29-632688e8-1_arm_xscale.ipk
+Size: 5822
+SHA256sum: 3b7ed77126cf64a551c08cd5d4df12658680da6cafb35b1600eb2939879c5065
+Description:  Library for parsing and generating JSON from shell scripts
+
+Package: jsonfilter
+Version: 2016-07-02-dea067ad-1
+Depends: libc, libubox, libjson-c
+Source: package/utils/jsonfilter
+License: ISC
+Section: base
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_xscale
+Installed-Size: 8032
+Filename: jsonfilter_2016-07-02-dea067ad-1_arm_xscale.ipk
+Size: 8816
+SHA256sum: a99c0fc1d9c68286150b7a73c2c925673ce99714209a29d9275c656938d366c8
+Description:  OpenWrt JSON filter utility
+
+Package: lede-keyring
+Version: 2017-01-20-a50b7529-1
+Depends: libc
+Source: package/system/lede-keyring
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: arm_xscale
+Installed-Size: 865
+Filename: lede-keyring_2017-01-20-a50b7529-1_arm_xscale.ipk
+Size: 1639
+SHA256sum: 5dae0fcab84de885693a5bc53d9a7b1d83008d1bba6d7caf7a849f688fabe6ae
+Description:  The keyring of with the developer using and gpg public keys.
+
+Package: libblobmsg-json
+Version: 2017-09-29-632688e8-1
+Depends: libc, libjson-c, libubox
+Source: package/libs/libubox
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 3364
+Filename: libblobmsg-json_2017-09-29-632688e8-1_arm_xscale.ipk
+Size: 4076
+SHA256sum: b4270d7c84058beb98e2c6ae157ef2ef581ba307530411493c571c70138fac9d
+Description:  blobmsg <-> json conversion library
+
+Package: libip4tc
+Version: 1.6.1-1
+Depends: libc, libxtables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: arm_xscale
+Installed-Size: 19026
+Filename: libip4tc_1.6.1-1_arm_xscale.ipk
+Size: 19719
+SHA256sum: 231633a8cb6a2cbd2a1a90e7bb4b92aba66bb6751c214c9f5c20d5726b8c3052
+Description:  IPv4 firewall - shared libiptc library
+
+Package: libip6tc
+Version: 1.6.1-1
+Depends: libc, libxtables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: arm_xscale
+Installed-Size: 18736
+Filename: libip6tc_1.6.1-1_arm_xscale.ipk
+Size: 19480
+SHA256sum: 4eb4109dd9349fa8af750253dcaea761e3c3bc11a77d2d68c3b2ad65a66ffaf3
+Description:  IPv6 firewall - shared libiptc library
+
+Package: libjson-c
+Version: 0.12.1-1
+Depends: libc
+Source: package/libs/libjson-c
+License: MIT
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 14663
+Filename: libjson-c_0.12.1-1_arm_xscale.ipk
+Size: 15415
+SHA256sum: 888faa4aa805fcd567758ae76899935eb52697ff787c744109646efe25769d8d
+Description:  This package contains a library for javascript object notation backends.
+
+Package: libjson-script
+Version: 2017-09-29-632688e8-1
+Depends: libc, libubox
+Source: package/libs/libubox
+License: ISC
+Section: utils
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 4341
+Filename: libjson-script_2017-09-29-632688e8-1_arm_xscale.ipk
+Size: 5063
+SHA256sum: b25e919989a5f7039dc89673362e5df4b346bb531343f8d8b047ba006c190f53
+Description:  Minimalistic JSON based scripting engine
+
+Package: liblua
+Version: 5.1.5-1
+Depends: libc
+Source: package/utils/lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_xscale
+Installed-Size: 61731
+Filename: liblua_5.1.5-1_arm_xscale.ipk
+Size: 62498
+SHA256sum: b5665336f08f742531854a95c6815517ee7ec9143b14310f2e98dde55c27d4a2
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua shared libraries, needed by other programs.
+
+Package: libnl-tiny
+Version: 0.1-5
+Depends: libc
+Source: package/libs/libnl-tiny
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 12061
+Filename: libnl-tiny_0.1-5_arm_xscale.ipk
+Size: 12792
+SHA256sum: ecaf2cd45627c712265a603f771cc3065f99df9241405f8ec184e8d0989d6bb7
+Description:  This package contains a stripped down version of libnl
+
+Package: libpcap
+Version: 1.8.1-1
+Depends: libc
+Source: package/libs/libpcap
+License: BSD-3-Clause
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 87843
+Filename: libpcap_1.8.1-1_arm_xscale.ipk
+Size: 88290
+SHA256sum: 46bfe8abfe3a2d6479f0a1291a56e343d206ef7047458feaf47c37a31d8b5770
+Description:  This package contains a system-independent library for user-level network packet
+ capture.
+
+Package: libubox
+Version: 2017-09-29-632688e8-1
+Depends: libc
+Source: package/libs/libubox
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 17714
+Filename: libubox_2017-09-29-632688e8-1_arm_xscale.ipk
+Size: 18452
+SHA256sum: 36162540153a133cd8efe9b186bbae8c7cd468b99590d7123a0f85c068fb4c97
+Description:  Basic utility library
+
+Package: libubus-lua
+Version: 2017-02-18-34c6e818-1
+Depends: libc, libubus, liblua
+Source: package/system/ubus
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 6646
+Filename: libubus-lua_2017-02-18-34c6e818-1_arm_xscale.ipk
+Size: 7438
+SHA256sum: c8ed5cae6596bac06afb0934343c3a76a36a2b35efecf473b4c67c098c1e40e0
+Description:  Lua binding for the OpenWrt RPC client
+
+Package: libubus
+Version: 2017-02-18-34c6e818-1
+Depends: libc, libubox
+Source: package/system/ubus
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 9470
+Filename: libubus_2017-02-18-34c6e818-1_arm_xscale.ipk
+Size: 10203
+SHA256sum: 5c657ef78556f6a1584a83d1c8ea717e9f0a4e91acbbbdb1b7317010a3787dd0
+Description:  OpenWrt RPC client library
+
+Package: libuci-lua
+Version: 2017-09-29-5ad59ad4-1
+Depends: libc, libuci, liblua
+Source: package/system/uci
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 5732
+Filename: libuci-lua_2017-09-29-5ad59ad4-1_arm_xscale.ipk
+Size: 6462
+SHA256sum: e07cc0bdcd0426727470fac645ac8fe25cffde74a0fd1a5b6708a205732eeacc
+Description:  Lua plugin for UCI
+
+Package: libuci
+Version: 2017-09-29-5ad59ad4-1
+Depends: libc, libubox
+Source: package/system/uci
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 15093
+Filename: libuci_2017-09-29-5ad59ad4-1_arm_xscale.ipk
+Size: 15825
+SHA256sum: 83b0bc6eb9a4088038434836e4907cce6920677d5c0c757cac1e9720c5ff0a92
+Description:  C library for the Unified Configuration Interface (UCI)
+
+Package: libuclient
+Version: 2017-09-06-24d6eded-1
+Depends: libc, libubox
+Source: package/libs/uclient
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 9127
+Filename: libuclient_2017-09-06-24d6eded-1_arm_xscale.ipk
+Size: 9824
+SHA256sum: f08e1717cd0952ff47479e025c38ca5bbccdc0f7bc86a1eb3cbe43b2a4a373a1
+Description:  HTTP/1.1 client library
+
+Package: libxtables
+Version: 1.6.1-1
+Depends: libc
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: arm_xscale
+Installed-Size: 40861
+Filename: libxtables_1.6.1-1_arm_xscale.ipk
+Size: 41616
+SHA256sum: ed810e998fee945926314ad7d96762acbc9c222666c73810fbc4c75e03fa6cf2
+Description:  IPv4/IPv6 firewall - shared xtables library
+
+Package: logd
+Version: 2017-09-01-b1bc8d5f-1
+Depends: libc, libubox, libubus, libblobmsg-json
+Source: package/system/ubox
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: arm_xscale
+Installed-Size: 9432
+Filename: logd_2017-09-01-b1bc8d5f-1_arm_xscale.ipk
+Size: 10169
+SHA256sum: 206da48fa678fd62bbc24d6e4dabab9748ec453e35d522caa3502d8b216dc568
+Description:  OpenWrt system log implementation
+
+Package: lua
+Version: 5.1.5-1
+Depends: libc, liblua
+Source: package/utils/lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: lang
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_xscale
+Installed-Size: 4270
+Filename: lua_5.1.5-1_arm_xscale.ipk
+Size: 5102
+SHA256sum: 44567040eb852651c742a2378a79b3ca36df3aab3273da4b8655f9d096f521e3
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua language interpreter.
+
+Package: mtd
+Version: 21
+Depends: libc, libubox
+Source: package/system/mtd
+License: GPL-2.0+
+Section: utils
+Architecture: arm_xscale
+Installed-Size: 11535
+Filename: mtd_21_arm_xscale.ipk
+Size: 12245
+SHA256sum: 92d10fd7a9b0ac446438502c32220ad5594555e23a7339ef990fd09585adcd7e
+Description:  This package contains an utility useful to upgrade from other firmware or 
+ older OpenWrt releases.
+
+Package: netifd
+Version: 2017-10-19-0f96606b-1
+Depends: libc, libuci, libnl-tiny, libubus, ubus, ubusd, jshn, libubox
+Source: package/network/config/netifd
+License: GPL-2.0
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 66437
+Filename: netifd_2017-10-19-0f96606b-1_arm_xscale.ipk
+Size: 67162
+SHA256sum: f6766dd1d0f4c5067a0c7518aa9562ba150184a38d201954f3846dfcda6dcda5
+Description:  OpenWrt Network Interface Configuration Daemon
+
+Package: odhcp6c
+Version: 2017-09-05-51733a6d-4
+Depends: libc, libubox
+Source: package/network/ipv6/odhcp6c
+License: GPL-2.0
+Section: net
+Maintainer: Hans Dedecker <dedeckeh@gmail.com>
+Architecture: arm_xscale
+Installed-Size: 23443
+Filename: odhcp6c_2017-09-05-51733a6d-4_arm_xscale.ipk
+Size: 24158
+SHA256sum: de8571dd6c3527485372c51765338fa32b9a4221171a85aa8656ea48a4076798
+Description:  Embedded DHCPv6-client for OpenWrt
+
+Package: odhcpd
+Version: 2017-09-16-f0bce9cd-1
+Depends: libc, libubox, libuci, libubus, libnl-tiny
+Source: package/network/services/odhcpd
+License: GPL-2.0
+Section: net
+Maintainer: Hans Dedecker <dedeckeh@gmail.com>
+Architecture: arm_xscale
+Installed-Size: 34560
+Filename: odhcpd_2017-09-16-f0bce9cd-1_arm_xscale.ipk
+Size: 35463
+SHA256sum: 93a7423ad4071916046c18277236968e10de9da19951519f4087e2019eaee0db
+Description:  odhcpd is a daemon for serving and relaying IP management protocols to
+ configure clients and downstream routers. It tries to follow the RFC 6204
+ requirements for IPv6 home routers.
+ 
+ odhcpd provides server services for DHCP, RA, stateless and stateful DHCPv6,
+ prefix delegation and can be used to relay RA, DHCPv6 and NDP between routed
+ (non-bridged) interfaces in case no delegated prefixes are available.
+
+Package: ppp-mod-pppoe
+Version: 2.4.7-12
+Depends: libc, kmod-pppoe
+Source: package/network/services/ppp
+License: BSD-4-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 10204
+Filename: ppp-mod-pppoe_2.4.7-12_arm_xscale.ipk
+Size: 10959
+SHA256sum: e15c1540e50db675600e6e603f439e8477863c24260a08b5cc5660eae9d2f9bf
+Description:  This package contains a PPPoE (PPP over Ethernet) plugin for ppp.
+
+Package: ppp
+Version: 2.4.7-12
+Depends: libc, kmod-ppp
+Source: package/network/services/ppp
+License: BSD-4-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 107148
+Filename: ppp_2.4.7-12_arm_xscale.ipk
+Size: 107801
+SHA256sum: a08ce64c418448eb63f0d34ff13eb83e33e4293d3319f81232f047ca957edaad
+Description:  This package contains the PPP (Point-to-Point Protocol) daemon.
+
+Package: procd
+Version: 2017-09-28-ee582d16-1
+Depends: libc, ubusd, ubus, libjson-script, ubox, libubox, libubus
+Source: package/system/procd
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: arm_xscale
+Installed-Size: 39257
+Filename: procd_2017-09-28-ee582d16-1_arm_xscale.ipk
+Size: 39843
+SHA256sum: 48db30e733076c4336c9a47f7a0f1d0228a0df55de47abb02f524e4343b8ff2f
+Description:  OpenWrt system process manager
+
+Package: relayd
+Version: 2016-02-07-ad0b25ad-2
+Depends: libc, libubox
+Source: package/network/services/relayd
+License: GPL-2.0
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 9395
+Filename: relayd_2016-02-07-ad0b25ad-2_arm_xscale.ipk
+Size: 10154
+SHA256sum: 04b17a6d6aff1c8a90773af647c418bff8c03eb410a916682c2b0e416b23d262
+Description:  Transparent routing / relay daemon
+
+Package: rpcd
+Version: 2016-12-03-0577cfc1-1
+Depends: libc, libubus, libubox, libuci, libblobmsg-json
+Source: package/system/rpcd
+License: ISC
+Section: utils
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_xscale
+Installed-Size: 17582
+Filename: rpcd_2016-12-03-0577cfc1-1_arm_xscale.ipk
+Size: 18366
+SHA256sum: 1cd754f8dea30f7209e46d46a1ff658bc648fa5a26e0ff879f9a316af86a28d5
+Description:  This package provides the UBUS RPC backend server to expose various
+ functionality to frontend programs via JSON-RPC.
+
+Package: tcpdump-mini
+Version: 4.9.2-1
+Depends: libc, libpcap
+Source: package/network/utils/tcpdump
+License: BSD-3-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 138386
+Filename: tcpdump-mini_4.9.2-1_arm_xscale.ipk
+Size: 139090
+SHA256sum: d7e4a7749a873e219c6117179073ca003496513e4f23d4d172d22de25a32d79a
+Description:  Network monitoring and data acquisition tool (minimal version)
+
+Package: ubox
+Version: 2017-09-01-b1bc8d5f-1
+Depends: libc, libubox, ubusd, ubus, libubus, libuci
+Source: package/system/ubox
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: arm_xscale
+Installed-Size: 14647
+Filename: ubox_2017-09-01-b1bc8d5f-1_arm_xscale.ipk
+Size: 15370
+SHA256sum: d657e8fd4f062205acecd3bc924d7bca43cae77d0e1a4a466953d39bd64cde2d
+Description:  OpenWrt system helper toolbox
+
+Package: ubus
+Version: 2017-02-18-34c6e818-1
+Depends: libc, libubus, libblobmsg-json, ubusd
+Source: package/system/ubus
+License: LGPL-2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 4989
+Filename: ubus_2017-02-18-34c6e818-1_arm_xscale.ipk
+Size: 5718
+SHA256sum: 198cc67dedcac76196937bd22c226c63da9f386e95808b4e5624c3f39e68a0f4
+Description:  OpenWrt RPC client utility
+
+Package: ubusd
+Version: 2017-02-18-34c6e818-1
+Depends: libc, libubox, libblobmsg-json
+Source: package/system/ubus
+License: LGPL-2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 9975
+Filename: ubusd_2017-02-18-34c6e818-1_arm_xscale.ipk
+Size: 10711
+SHA256sum: 7cace913a62f30421b7a9c934110aaa17feab652c5cfc2c3a7eb546f24755e3d
+Description:  OpenWrt RPC daemon
+
+Package: uci
+Version: 2017-09-29-5ad59ad4-1
+Depends: libc, libuci
+Source: package/system/uci
+License: LGPL-2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 6364
+Filename: uci_2017-09-29-5ad59ad4-1_arm_xscale.ipk
+Size: 7150
+SHA256sum: 5122263559f2cd0645430206c7216853743d1a24591e688949b0a1b697ff0f6b
+Description:  Utility for the Unified Configuration Interface (UCI)
+
+Package: uclient-fetch
+Version: 2017-09-06-24d6eded-1
+Depends: libc, libuclient
+Source: package/libs/uclient
+License: ISC
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 6798
+Filename: uclient-fetch_2017-09-06-24d6eded-1_arm_xscale.ipk
+Size: 7506
+SHA256sum: 5d932af360be735a8d4a32579079603edb1054c069869e4f7e29ebadaf83308a
+Description:  Tiny wget replacement using libuclient
+
+Package: uhttpd-mod-ubus
+Version: 2017-08-19-3fd58e9b-1
+Depends: libc, uhttpd, libubus, libblobmsg-json
+Source: package/network/services/uhttpd
+License: ISC
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 5623
+Filename: uhttpd-mod-ubus_2017-08-19-3fd58e9b-1_arm_xscale.ipk
+Size: 6439
+SHA256sum: 58dea0233a2d5ac5ff78612bd41a89038400eaf9256235f515214fecfbc1b55e
+Description:  The ubus plugin adds a HTTP/JSON RPC proxy for ubus and publishes the
+ session.* namespace and procedures.
+
+Package: uhttpd
+Version: 2017-08-19-3fd58e9b-1
+Depends: libc, libubox, libblobmsg-json, libjson-script
+Source: package/network/services/uhttpd
+License: ISC
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 22797
+Filename: uhttpd_2017-08-19-3fd58e9b-1_arm_xscale.ipk
+Size: 23638
+SHA256sum: 85d5211d1059aa22f75b3e215dd0518ef691e11cc2a7e662c65667ca58dcf5ba
+Description:  uHTTPd is a tiny single threaded HTTP server with TLS, CGI and Lua
+ support. It is intended as a drop-in replacement for the Busybox
+ HTTP daemon.
+
+Package: usign
+Version: 2015-07-04-ef641914-1
+Depends: libc, libubox
+Source: package/system/usign
+License: ISC
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 10372
+Filename: usign_2015-07-04-ef641914-1_arm_xscale.ipk
+Size: 11112
+SHA256sum: 981dd14f20e71ec6ff78eecb12de09b27ba67ae9f20581f8d7aab9155647fb02
+Description:  OpenWrt signature verification utility
+
+Package: wpad-mini
+Version: 2017-08-24-c2d4f2eb-3
+Depends: libc, libnl-tiny, hostapd-common, libubus
+Source: package/network/services/hostapd
+License: BSD-3-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_xscale
+Installed-Size: 279195
+Filename: wpad-mini_2017-08-24-c2d4f2eb-3_arm_xscale.ipk
+Size: 279789
+SHA256sum: 672daf50dcdcccb1217a2791dcd00a39561e52e638847f53761a65ff30e5f938
+Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (WPA-PSK only).
+

@@ -1,0 +1,141 @@
+Package: luci-app-firewall
+Version: git-18.029.66937-b673db8-1
+Depends: libc, firewall
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 10092
+Filename: luci-app-firewall_git-18.029.66937-b673db8-1_all.ipk
+Size: 10843
+SHA256sum: 31112d0a2ad3405570d903b2bddd7c4f496f9d49e0d39bf5b8ed2312e52bb73e
+Description:  Firewall and Portforwarding application
+
+Package: luci-base
+Version: git-18.029.66937-b673db8-1
+Depends: libuci-lua (>= 2018-01-01), libc, lua, libuci-lua, luci-lib-nixio, luci-lib-ip, rpcd, libubus-lua, luci-lib-jsonc
+License: Apache-2.0
+Section: luci
+Architecture: arm_xscale
+Installed-Size: 109336
+Filename: luci-base_git-18.029.66937-b673db8-1_arm_xscale.ipk
+Size: 110283
+SHA256sum: 598efece964a87c4c38e326393ec2bae85b6c3767c5d3ec6bcca50c14f38c5f3
+Description:  LuCI core libraries
+
+Package: luci-lib-ip
+Version: git-18.029.66937-b673db8-1
+Depends: libc, liblua, libnl-tiny
+License: Apache-2.0
+Section: luci
+Architecture: arm_xscale
+Installed-Size: 9230
+Filename: luci-lib-ip_git-18.029.66937-b673db8-1_arm_xscale.ipk
+Size: 9967
+SHA256sum: 98abb2ff1632622a12d77629e2ccc9faed7265287c6ec2b613979110f0ca5cd6
+Description:  Lua library for IP calculation and routing information
+
+Package: luci-lib-jsonc
+Version: git-18.029.66937-b673db8-1
+Depends: libc, liblua, libjson-c
+Section: luci
+Architecture: arm_xscale
+Installed-Size: 3609
+Filename: luci-lib-jsonc_git-18.029.66937-b673db8-1_arm_xscale.ipk
+Size: 4297
+SHA256sum: 4c7e5bf7d2749f61c8500024037d656fa878cab73f0ab1aa6a21c5d5e0c432e0
+Description:  Lua binding for JSON-C
+
+Package: luci-lib-nixio
+Version: git-18.029.66937-b673db8-1
+Depends: libc, liblua
+License: Apache-2.0
+Section: luci
+Architecture: arm_xscale
+Installed-Size: 29844
+Filename: luci-lib-nixio_git-18.029.66937-b673db8-1_arm_xscale.ipk
+Size: 30400
+SHA256sum: 3ac982c7f7b97ae1abe72a1668f464cdd82fe31ffef5032cc837e15d84c62878
+Description:  NIXIO POSIX library
+
+Package: luci-mod-admin-full
+Version: git-18.029.66937-b673db8-1
+Depends: libc, luci-base
+License: Apache-2.0
+Section: luci
+Architecture: arm_xscale
+Installed-Size: 71507
+Filename: luci-mod-admin-full_git-18.029.66937-b673db8-1_arm_xscale.ipk
+Size: 72409
+SHA256sum: 322d2c8964249ed5fe2b4ca0f6e44c1823004b596e5c9484dfc08f7e4533ef65
+Description:  LuCI Administration - full-featured for full control
+
+Package: luci-proto-ppp
+Version: git-18.029.66937-b673db8-1
+Depends: libc
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 2916
+Filename: luci-proto-ppp_git-18.029.66937-b673db8-1_all.ipk
+Size: 3629
+SHA256sum: 780659da6fa3f6c3244aeec7b68d2741810e68c7c7820e19cdea3ce79fffe6c8
+Description:  Support for PPP/PPPoE/PPPoA/PPtP
+
+Package: luci-proto-relay
+Version: git-18.029.66937-b673db8-1
+Depends: libc, relayd
+Section: luci
+Architecture: all
+Installed-Size: 1581
+Filename: luci-proto-relay_git-18.029.66937-b673db8-1_all.ipk
+Size: 2271
+SHA256sum: 4d33d90895c44b241ef926aacdeed3a7a79a3df448388a3332c3d0a5a7e8d2a2
+Description:  Support for relayd pseudo bridges
+
+Package: luci-theme-bootstrap
+Version: git-18.029.66937-b673db8-1
+Depends: libc
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 13173
+Filename: luci-theme-bootstrap_git-18.029.66937-b673db8-1_all.ipk
+Size: 13923
+SHA256sum: 91cda211c0c71a6e4f73d302a55ff475fe93bb18f3c5199d96fd1b4eb372839d
+Description:  Bootstrap Theme (default)
+
+Package: luci-theme-openwrt
+Version: git-18.029.66937-b673db8-1
+Depends: libc
+Section: luci
+Architecture: all
+Installed-Size: 6961
+Filename: luci-theme-openwrt_git-18.029.66937-b673db8-1_all.ipk
+Size: 7779
+SHA256sum: 08d38fae0942185270dd3fa5186076e179296fb7fae1d143b00b7a6340303eab
+Description:  LuCI OpenWrt.org theme
+
+Package: luci
+Version: git-18.029.66937-b673db8-1
+Depends: libc, uhttpd, uhttpd-mod-ubus, luci-mod-admin-full, luci-theme-bootstrap, luci-app-firewall, luci-proto-ppp, libiwinfo-lua, rpcd-mod-rrdns
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 105
+Filename: luci_git-18.029.66937-b673db8-1_all.ipk
+Size: 898
+SHA256sum: 90d646acdfe4fb7745f53d1cb1c871d6de8705dce7f069173e894ced5e045f77
+Description:  Standard OpenWrt set including full admin with ppp support and the default Bootstrap theme
+
+Package: rpcd-mod-rrdns
+Version: 20170710
+Depends: libc, rpcd, libubox, libubus
+License: Apache-2.0
+Section: libs
+Architecture: arm_xscale
+Installed-Size: 3654
+Filename: rpcd-mod-rrdns_20170710_arm_xscale.ipk
+Size: 4444
+SHA256sum: dee0bb9c0b226621ed2dd94f22f8514af238031ba742ca7b790f1e725f1d0ac3
+Description:  Provides rapid mass reverse DNS lookup functionality.
+
