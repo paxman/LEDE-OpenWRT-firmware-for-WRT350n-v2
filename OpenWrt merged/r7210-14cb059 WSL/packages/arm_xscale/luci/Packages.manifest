@@ -1,0 +1,185 @@
+Package: liblucihttp-lua
+Version: 2018-05-18-cb119ded-1
+Depends: libc, liblucihttp, liblua
+Source: feeds/luci/contrib/package/lucihttp
+License: ISC
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_xscale
+Installed-Size: 3318
+Filename: liblucihttp-lua_2018-05-18-cb119ded-1_arm_xscale.ipk
+Size: 4068
+SHA256sum: 9c90a51ee3c20bf7482c9e53046e5d0652679941abdc7ed1516e4a52428c50cc
+Description:  Lua binding for the LuCI HTTP utility library
+
+Package: liblucihttp
+Version: 2018-05-18-cb119ded-1
+Depends: libc
+Source: feeds/luci/contrib/package/lucihttp
+License: ISC
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_xscale
+Installed-Size: 6569
+Filename: liblucihttp_2018-05-18-cb119ded-1_arm_xscale.ipk
+Size: 7352
+SHA256sum: de555b139e4a75e6b623cf63fa3f81f6e2a1cb7ccb0a054753beb985a3ffd259
+Description:  LuCI HTTP utility library
+
+Package: luci-app-firewall
+Version: git-18.163.61042-b5a43cf-1
+Depends: libc, firewall
+Source: feeds/luci/applications/luci-app-firewall
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 10572
+Filename: luci-app-firewall_git-18.163.61042-b5a43cf-1_all.ipk
+Size: 11282
+SHA256sum: 2a54d7aa1661ecf53c29b2452e7327eb5168913929454cf153c22bd43f54664d
+Description:  Firewall and Portforwarding application
+
+Package: luci-base
+Version: git-18.163.61042-b5a43cf-1
+Depends: libc, lua, luci-lib-nixio, luci-lib-ip, rpcd, libubus-lua, luci-lib-jsonc, liblucihttp-lua
+Source: feeds/luci/modules/luci-base
+License: Apache-2.0
+Section: luci
+Architecture: arm_xscale
+Installed-Size: 113175
+Filename: luci-base_git-18.163.61042-b5a43cf-1_arm_xscale.ipk
+Size: 114100
+SHA256sum: 30dd600d9d31f72e3ec488370df209dc00b2d32e4b160a9cd1667b169749953b
+Description:  LuCI core libraries
+
+Package: luci-lib-ip
+Version: git-18.163.61042-b5a43cf-1
+Depends: libc, liblua, libnl-tiny
+Source: feeds/luci/libs/luci-lib-ip
+License: Apache-2.0
+Section: luci
+Architecture: arm_xscale
+Installed-Size: 10233
+Filename: luci-lib-ip_git-18.163.61042-b5a43cf-1_arm_xscale.ipk
+Size: 10973
+SHA256sum: 75adb6513546e5da486f695cee273b6003a4c90e71f78c255551b2ae7c552055
+Description:  Lua library for IP calculation and routing information
+
+Package: luci-lib-jsonc
+Version: git-18.163.61042-b5a43cf-1
+Depends: libc, liblua, libjson-c
+Source: feeds/luci/libs/luci-lib-jsonc
+Section: luci
+Architecture: arm_xscale
+Installed-Size: 3464
+Filename: luci-lib-jsonc_git-18.163.61042-b5a43cf-1_arm_xscale.ipk
+Size: 4149
+SHA256sum: dc93c0f537c3bd7d02c25bb0280dcfab67744359a6371ebc14848816f8de3f68
+Description:  Lua binding for JSON-C
+
+Package: luci-lib-nixio
+Version: git-18.163.61042-b5a43cf-1
+Depends: libc, liblua
+Source: feeds/luci/libs/luci-lib-nixio
+License: Apache-2.0
+Section: luci
+Architecture: arm_xscale
+Installed-Size: 29109
+Filename: luci-lib-nixio_git-18.163.61042-b5a43cf-1_arm_xscale.ipk
+Size: 29585
+SHA256sum: e2499d96af0ea01f925864d3a65871a8b143b49884effcc72b4e05e171f7cafb
+Description:  NIXIO POSIX library
+
+Package: luci-mod-admin-full
+Version: git-18.163.61042-b5a43cf-1
+Depends: libc, luci-base
+Source: feeds/luci/modules/luci-mod-admin-full
+License: Apache-2.0
+Section: luci
+Architecture: arm_xscale
+Installed-Size: 72294
+Filename: luci-mod-admin-full_git-18.163.61042-b5a43cf-1_arm_xscale.ipk
+Size: 73229
+SHA256sum: 64e8536bc56f2b64e84a26a54bc6e340b20c9477c7fa0e769c0e66c12aa03481
+Description:  LuCI Administration - full-featured for full control
+
+Package: luci-proto-ipv6
+Version: git-18.163.61042-b5a43cf-1
+Depends: libc
+Source: feeds/luci/protocols/luci-proto-ipv6
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 3332
+Filename: luci-proto-ipv6_git-18.163.61042-b5a43cf-1_all.ipk
+Size: 4050
+SHA256sum: 9b140b681a320e7f3ff70bb5a496ac1b46bd174616d3ed89d9b8a84cd12c41da
+Description:  Support for DHCPv6/6in4/6to4/6rd/DS-Lite
+
+Package: luci-proto-ppp
+Version: git-18.163.61042-b5a43cf-1
+Depends: libc
+Source: feeds/luci/protocols/luci-proto-ppp
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 2887
+Filename: luci-proto-ppp_git-18.163.61042-b5a43cf-1_all.ipk
+Size: 3614
+SHA256sum: d4cad353dd3b68a0a7b3397a9cf444ddf3110b06f81efa72cead0f1eda58afb4
+Description:  Support for PPP/PPPoE/PPPoA/PPtP
+
+Package: luci-proto-relay
+Version: git-18.163.61042-b5a43cf-1
+Depends: libc, relayd
+Source: feeds/luci/protocols/luci-proto-relay
+Section: luci
+Architecture: all
+Installed-Size: 1581
+Filename: luci-proto-relay_git-18.163.61042-b5a43cf-1_all.ipk
+Size: 2269
+SHA256sum: 375b8eff77d400f3549ba37f73dc31ce956001fec1dbb160a1b55a896a208df9
+Description:  Support for relayd pseudo bridges
+
+Package: luci-theme-bootstrap
+Version: git-18.163.61042-b5a43cf-1
+Depends: libc
+Source: feeds/luci/themes/luci-theme-bootstrap
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 11072
+Filename: luci-theme-bootstrap_git-18.163.61042-b5a43cf-1_all.ipk
+Size: 11870
+SHA256sum: fc3e4f16fced3aa1aab74558eecf12a4f9ca2558ad46650a99278909b6c4ff06
+Description:  Bootstrap Theme (default)
+
+Package: luci
+Version: git-18.163.61042-b5a43cf-1
+Depends: libc, uhttpd, uhttpd-mod-ubus, luci-mod-admin-full, luci-theme-bootstrap, luci-app-firewall, luci-proto-ppp, libiwinfo-lua, luci-proto-ipv6, rpcd-mod-rrdns
+Source: feeds/luci/collections/luci
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 105
+Filename: luci_git-18.163.61042-b5a43cf-1_all.ipk
+Size: 904
+SHA256sum: b0f6cd9c9d243b30a9bb437f77a5cf88baa67090371fdf6864813ad8acfe0967
+Description:  Standard OpenWrt set including full admin with ppp support and the default Bootstrap theme
+
+Package: rpcd-mod-rrdns
+Version: 20170710
+Depends: libc, rpcd, libubox, libubus
+Source: feeds/luci/libs/rpcd-mod-rrdns
+License: Apache-2.0
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_xscale
+Installed-Size: 3558
+Filename: rpcd-mod-rrdns_20170710_arm_xscale.ipk
+Size: 4350
+SHA256sum: 4766a5c95ec0e3d7803feacba42c48aa757af2f034a1ac1aa8090ffcc1b40c2c
+Description:  Provides rapid mass reverse DNS lookup functionality.
+
