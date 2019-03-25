@@ -1,0 +1,2 @@
+Kernel image was too big, so I, since the ISP is still ipv4 only, got rid of ipv6 packages, and, because wrt350n2 is behind router, ppp(oe) packages. 
+This was done by changing the `target/linux/orion/Makefile` file. See attached Makefile.

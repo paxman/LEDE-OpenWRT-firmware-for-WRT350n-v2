@@ -1,0 +1,408 @@
+Package: base-files
+Version: 197-r9680-0304e76cd1
+Depends: libc, netifd, procd, jsonfilter, usign, openwrt-keyring, fstools, fwtool
+License: GPL-2.0
+Section: base
+Architecture: arm_xscale
+Installed-Size: 40483
+Filename: base-files_197-r9680-0304e76cd1_arm_xscale.ipk
+Size: 41486
+SHA256sum: b75a9ffe6241eaa4155591e917c46e8b4d411d34e79d83ab1e10f3e7ab98feff
+Description:  This package contains a base filesystem and system scripts for OpenWrt.
+
+Package: fstools
+Version: 2018-12-28-af93f4b8-4
+Depends: libc, ubox
+License: GPL-2.0
+Section: base
+Architecture: arm_xscale
+Installed-Size: 15152
+Filename: fstools_2018-12-28-af93f4b8-4_arm_xscale.ipk
+Size: 15836
+SHA256sum: 71d27f76098de75acf3fc5074a213947579da3e97e788ae962fd625154322409
+Description:  OpenWrt filesystem tools
+
+Package: fwtool
+Version: 1
+Depends: libc
+Section: utils
+Architecture: arm_xscale
+Installed-Size: 3573
+Filename: fwtool_1_arm_xscale.ipk
+Size: 4278
+SHA256sum: 7ade52d1a81636dfd9efed0937c9e407988956e8f915c10ac32a8a02884f1a45
+Description:  Utility for appending and extracting firmware metadata and signatures
+
+Package: iptables
+Version: 1.8.2-3
+Depends: libc, kmod-ipt-core, libip4tc0, libxtables12
+License: GPL-2.0
+Section: net
+Architecture: arm_xscale
+Installed-Size: 19110
+Filename: iptables_1.8.2-3_arm_xscale.ipk
+Size: 19984
+SHA256sum: db7bd9c5eb445a5f6ce15e1036f8c5ba3022fe4d86010f4ccbfe93e503d1281e
+Description:  IP firewall administration tool.
+ 
+ Matches:
+ - icmp
+ - tcp
+ - udp
+ - comment
+ - conntrack
+ - limit
+ - mac
+ - mark
+ - multiport
+ - set
+ - state
+ - time
+ 
+ Targets:
+ - ACCEPT
+ - CT
+ - DNAT
+ - DROP
+ - REJECT
+ - FLOWOFFLOAD
+ - LOG
+ - MARK
+ - MASQUERADE
+ - REDIRECT
+ - SET
+ - SNAT
+ - TCPMSS
+ 
+ Tables:
+ - filter
+ - mangle
+ - nat
+ - raw
+ 
+
+Package: iwinfo
+Version: 2019-03-21-a8e82759-1
+Depends: libc, libiwinfo20181126
+License: GPL-2.0
+Section: utils
+Architecture: arm_xscale
+Installed-Size: 6406
+Filename: iwinfo_2019-03-21-a8e82759-1_arm_xscale.ipk
+Size: 7218
+SHA256sum: 5212d78836261f523f1f84257268fc6f06610ca7d1f1877b3cf7a1fc3cab4101
+Description:  Command line frontend for the wireless information library.
+
+Package: kmod-ath9k-common
+Version: 4.9.164+4.19.23-1-5
+Depends: kernel (=4.9.164-1-c6c00b9805ba5ed47fcef239bf4ffd75), kmod-ath
+Section: kernel
+Architecture: arm_xscale
+Installed-Size: 117324
+Filename: kmod-ath9k-common_4.9.164+4.19.23-1-5_arm_xscale.ipk
+Size: 116006
+SHA256sum: 77a5749bc21ff6cdf72006b1f5b2d2d1446f266d2f035bf099c89ef4ba1b74c0
+Description:  Atheros 802.11n wireless devices (common code for ath9k and ath9k_htc)
+
+Package: kmod-ath9k
+Version: 4.9.164+4.19.23-1-5
+Depends: kernel (=4.9.164-1-c6c00b9805ba5ed47fcef239bf4ffd75), kmod-ath9k-common
+Section: kernel
+Architecture: arm_xscale
+Installed-Size: 54582
+Filename: kmod-ath9k_4.9.164+4.19.23-1-5_arm_xscale.ipk
+Size: 55157
+SHA256sum: 3bc0261e1c2f813adac66d8cc84babaf045049e5b830b7e5b2a028ee0166026d
+Description:  This module adds support for wireless adapters based on
+ Atheros IEEE 802.11n AR5008 and AR9001 family of chipsets.
+
+Package: kmod-ath
+Version: 4.9.164+4.19.23-1-5
+Depends: kernel (=4.9.164-1-c6c00b9805ba5ed47fcef239bf4ffd75), kmod-mac80211
+Section: kernel
+Architecture: arm_xscale
+Installed-Size: 11003
+Filename: kmod-ath_4.9.164+4.19.23-1-5_arm_xscale.ipk
+Size: 11754
+SHA256sum: cf53917c6de19e4f528e5833e415f229137373ecfbcc58ce26495080ef629d33
+Description:  This module contains some common parts needed by Atheros Wireless drivers.
+
+Package: kmod-cfg80211
+Version: 4.9.164+4.19.23-1-5
+Depends: kernel (=4.9.164-1-c6c00b9805ba5ed47fcef239bf4ffd75), iw, wireless-regdb
+Section: kernel
+Architecture: arm_xscale
+Installed-Size: 128046
+Filename: kmod-cfg80211_4.9.164+4.19.23-1-5_arm_xscale.ipk
+Size: 128833
+SHA256sum: 411a05359e9bcde5cb1effe9ee3b79affd57de5981458acefa6f78982821b3f8
+Description:  cfg80211 is the Linux wireless LAN (802.11) configuration API.
+
+Package: kmod-i2c-core
+Version: 4.9.164-1
+Depends: kernel (=4.9.164-1-c6c00b9805ba5ed47fcef239bf4ffd75)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_xscale
+Installed-Size: 194
+Filename: kmod-i2c-core_4.9.164-1_arm_xscale.ipk
+Size: 915
+SHA256sum: f60058ab5c007d966d25494febcb11d2ca0d406b2bc66784f0b01759ff51d481
+Description:  Kernel modules for I2C support
+
+Package: kmod-ipt-conntrack
+Version: 4.9.164-1
+Depends: kernel (=4.9.164-1-c6c00b9805ba5ed47fcef239bf4ffd75), kmod-ipt-core, kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: arm_xscale
+Installed-Size: 2398
+Filename: kmod-ipt-conntrack_4.9.164-1_arm_xscale.ipk
+Size: 3193
+SHA256sum: 86998f743e71b6ba3f83eed84b2bb88bbd99de0da1e5493d420fbd0a74587786
+Description:  Netfilter (IPv4) kernel modules for connection tracking
+ Includes:
+ - conntrack
+ - defrag
+ - iptables_raw
+ - NOTRACK
+ - state
+
+Package: kmod-ipt-core
+Version: 4.9.164-1
+Depends: kernel (=4.9.164-1-c6c00b9805ba5ed47fcef239bf4ffd75), kmod-nf-reject, kmod-nf-ipt
+License: GPL-2.0
+Section: kernel
+Architecture: arm_xscale
+Installed-Size: 13821
+Filename: kmod-ipt-core_4.9.164-1_arm_xscale.ipk
+Size: 14612
+SHA256sum: 275b272811160a6f8f4e266f2bdfe10190a28b35d65b0b13e77d3318c584f727
+Description:  Netfilter core kernel modules
+ Includes:
+ - comment
+ - limit
+ - LOG
+ - mac
+ - multiport
+ - REJECT
+ - TCPMSS
+
+Package: kmod-ipt-nat
+Version: 4.9.164-1
+Depends: kernel (=4.9.164-1-c6c00b9805ba5ed47fcef239bf4ffd75), kmod-ipt-core, kmod-nf-nat
+License: GPL-2.0
+Section: kernel
+Architecture: arm_xscale
+Installed-Size: 2946
+Filename: kmod-ipt-nat_4.9.164-1_arm_xscale.ipk
+Size: 3745
+SHA256sum: db792020d4e566aeaeb6e5e56fbe458c01c192cc4d7ba4c3652f31a75e0e0e82
+Description:  Netfilter (IPv4) kernel modules for basic NAT targets
+ Includes:
+ - MASQUERADE
+
+Package: kmod-mac80211
+Version: 4.9.164+4.19.23-1-5
+Depends: kernel (=4.9.164-1-c6c00b9805ba5ed47fcef239bf4ffd75), kmod-cfg80211, hostapd-common
+Section: kernel
+Architecture: arm_xscale
+Installed-Size: 237103
+Filename: kmod-mac80211_4.9.164+4.19.23-1-5_arm_xscale.ipk
+Size: 236434
+SHA256sum: 76adf567ceba59d981454ab11b8ee8b8189fa9618bf29f01584a93881bab3f34
+Description:  Generic IEEE 802.11 Networking Stack (mac80211)
+
+Package: kmod-nf-conntrack
+Version: 4.9.164-1
+Depends: kernel (=4.9.164-1-c6c00b9805ba5ed47fcef239bf4ffd75)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_xscale
+Installed-Size: 34593
+Filename: kmod-nf-conntrack_4.9.164-1_arm_xscale.ipk
+Size: 35364
+SHA256sum: 500977d9e50f6b06af7c76af259194321a9e82a1f56f46fbd60955d3a8e111e1
+Description:  Netfilter connection tracking
+
+Package: kmod-nf-ipt
+Version: 4.9.164-1
+Depends: kernel (=4.9.164-1-c6c00b9805ba5ed47fcef239bf4ffd75)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_xscale
+Installed-Size: 13540
+Filename: kmod-nf-ipt_4.9.164-1_arm_xscale.ipk
+Size: 14262
+SHA256sum: 8d115c7b725b2240e5fdd9617a3831bc8325ce655cb68dc939f738a4bac8fc0b
+Description:  Iptables core
+
+Package: kmod-nf-nat
+Version: 4.9.164-1
+Depends: kernel (=4.9.164-1-c6c00b9805ba5ed47fcef239bf4ffd75), kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: arm_xscale
+Installed-Size: 10636
+Filename: kmod-nf-nat_4.9.164-1_arm_xscale.ipk
+Size: 11377
+SHA256sum: d7c359f85347d96ad4a40df6ce3b6b99ed734a917af10c7af6243f56ebecc3e1
+Description:  Netfilter NAT
+
+Package: kmod-nf-reject
+Version: 4.9.164-1
+Depends: kernel (=4.9.164-1-c6c00b9805ba5ed47fcef239bf4ffd75)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_xscale
+Installed-Size: 1912
+Filename: kmod-nf-reject_4.9.164-1_arm_xscale.ipk
+Size: 2666
+SHA256sum: da557673de541034b5ce10ddd372e108a98316d273e12e916b4c48a73e965b6f
+Description:  Netfilter IPv4 reject support
+
+Package: kmod-rtc-isl1208
+Version: 4.9.164-1
+Depends: kernel (=4.9.164-1-c6c00b9805ba5ed47fcef239bf4ffd75), kmod-i2c-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_xscale
+Installed-Size: 4109
+Filename: kmod-rtc-isl1208_4.9.164-1_arm_xscale.ipk
+Size: 4850
+SHA256sum: 7a45211a953da82c6e2957cefec9b3332db21c509d2a7c91a0396efa89e6a614
+Description:  Kernel module for Intersil ISL1208 RTC.
+
+Package: libgcc1
+Version: 7.4.0-1
+Provides: libgcc
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Architecture: arm_xscale
+Installed-Size: 22120
+Filename: libgcc1_7.4.0-1_arm_xscale.ipk
+Size: 22851
+SHA256sum: 31bc6367b58684bb342a473a7843a938a36883e5deae1f51941bb2cecc50e47d
+Description:  GCC support library
+
+Package: libip4tc0
+Version: 1.8.2-3
+Depends: libc, libxtables12
+Provides: libip4tc
+License: GPL-2.0
+Section: libs
+Architecture: arm_xscale
+Installed-Size: 19534
+Filename: libip4tc0_1.8.2-3_arm_xscale.ipk
+Size: 20281
+SHA256sum: 7c63e682a8bad14a0ed2c118bd83d725da3499f8a8f2ac76957bdd54a63315d2
+Description:  IPv4 firewall - shared libiptc library
+
+Package: libip6tc0
+Version: 1.8.2-3
+Depends: libc, libxtables12
+Provides: libip6tc
+License: GPL-2.0
+Section: libs
+Architecture: arm_xscale
+Installed-Size: 10848
+Filename: libip6tc0_1.8.2-3_arm_xscale.ipk
+Size: 11586
+SHA256sum: b0fabc788ae0a3f5eb0ff66cc835da86b94806c12686a3b0e0a55e7cd6afb8d3
+Description:  IPv6 firewall - shared libiptc library
+
+Package: libiwinfo-lua
+Version: 2019-03-21-a8e82759-1
+Depends: libc, libiwinfo20181126, liblua5.1.5
+License: GPL-2.0
+Section: lang
+Architecture: arm_xscale
+Installed-Size: 6558
+Filename: libiwinfo-lua_2019-03-21-a8e82759-1_arm_xscale.ipk
+Size: 7315
+SHA256sum: 08e1b76201cced2b7a51c73daafc4482537a6e9720201cc1b689f25de52dd398
+Description:  This is the Lua binding for the iwinfo library. It provides access to all enabled
+ backends.
+
+Package: libiwinfo20181126
+Version: 2019-03-21-a8e82759-1
+Depends: libc, libnl-tiny, libuci20130104, libubus20170705
+Provides: libiwinfo
+License: GPL-2.0
+Section: libs
+Architecture: arm_xscale
+Installed-Size: 25107
+Filename: libiwinfo20181126_2019-03-21-a8e82759-1_arm_xscale.ipk
+Size: 25861
+SHA256sum: 2fc8e0607c6bffbb8b915f03b22bfaab81ce1eaca01dc2a2a100402cb4c3b6c4
+Description:  Wireless information library with consistent interface for proprietary Broadcom,
+ nl80211 and wext driver interfaces.
+
+Package: libpthread
+Version: 1.1.21-1
+Depends: libgcc1
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Architecture: arm_xscale
+Installed-Size: 126
+Filename: libpthread_1.1.21-1_arm_xscale.ipk
+Size: 881
+SHA256sum: 9faef3a406e784824d9c25038e8bb8023dc6e6af1985a482d57f4f7b423333a6
+Description:  POSIX thread library
+
+Package: librt
+Version: 1.1.21-1
+Depends: libpthread
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Architecture: arm_xscale
+Installed-Size: 126
+Filename: librt_1.1.21-1_arm_xscale.ipk
+Size: 895
+SHA256sum: be7c899de51f7a7527a5cc336756f92403bba944b1f91b5bba9e1888cf2e4967
+Description:  POSIX.1b RealTime extension library
+
+Package: libxtables12
+Version: 1.8.2-3
+Depends: libc
+Provides: libxtables
+License: GPL-2.0
+Section: libs
+Architecture: arm_xscale
+Installed-Size: 42225
+Filename: libxtables12_1.8.2-3_arm_xscale.ipk
+Size: 42988
+SHA256sum: 86e4941e60aa181492dc739fed2d734ea016a335655f5ef1d2164ed4a187805d
+Description:  IPv4/IPv6 firewall - shared xtables library
+
+Package: mtd
+Version: 24
+Depends: libc, libubox20170601
+License: GPL-2.0+
+Section: utils
+Architecture: arm_xscale
+Installed-Size: 12004
+Filename: mtd_24_arm_xscale.ipk
+Size: 12752
+SHA256sum: 52d8dff8380619423c86b8a6befcc5ae799caf05d534999f191a35eade0e9d6a
+Description:  This package contains an utility useful to upgrade from other firmware or 
+ older OpenWrt releases.
+
+Package: uboot-envtools
+Version: 2018.03-3
+Depends: libc
+License: GPL-2.0 GPL-2.0+
+Section: utils
+Architecture: arm_xscale
+Installed-Size: 12566
+Filename: uboot-envtools_2018.03-3_arm_xscale.ipk
+Size: 13287
+SHA256sum: 6a04874171d67065db07d135019bf188f903a0e300927ccd0649aec166e9138e
+Description:  This package includes tools to read and modify U-Boot bootloader environment.
+
