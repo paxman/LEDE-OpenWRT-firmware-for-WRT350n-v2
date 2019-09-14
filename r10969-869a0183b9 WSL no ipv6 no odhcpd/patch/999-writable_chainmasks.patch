@@ -1,0 +1,14 @@
+--- a/drivers/net/wireless/ath/ath9k/debug.c
++++ b/drivers/net/wireless/ath/ath9k/debug.c
+@@ -1611,9 +1611,9 @@ int ath9k_init_debug(struct ath_hw *ah)
+ 	ath9k_cmn_debug_recv(sc->debug.debugfs_phy, &sc->debug.stats.rxstats);
+ 	ath9k_cmn_debug_phy_err(sc->debug.debugfs_phy, &sc->debug.stats.rxstats);
+ 
+-	debugfs_create_u8("rx_chainmask", 0400, sc->debug.debugfs_phy,
++	debugfs_create_u8("rx_chainmask", S_IRUSR | S_IWUSR, sc->debug.debugfs_phy,
+ 			  &ah->rxchainmask);
+-	debugfs_create_u8("tx_chainmask", 0400, sc->debug.debugfs_phy,
++	debugfs_create_u8("tx_chainmask", S_IRUSR | S_IWUSR, sc->debug.debugfs_phy,
+ 			  &ah->txchainmask);
+ 	debugfs_create_file("ani", 0400,
+ 			    sc->debug.debugfs_phy, sc, &fops_ani);

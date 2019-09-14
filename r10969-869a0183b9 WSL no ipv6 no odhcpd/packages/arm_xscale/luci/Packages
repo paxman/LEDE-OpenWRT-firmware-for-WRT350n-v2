@@ -1,0 +1,178 @@
+Package: liblucihttp-lua
+Version: 2019-07-05-a34a17d5-1
+Depends: libc, liblucihttp0, liblua5.1.5
+License: ISC
+Section: libs
+Architecture: arm_xscale
+Installed-Size: 3274
+Filename: liblucihttp-lua_2019-07-05-a34a17d5-1_arm_xscale.ipk
+Size: 4037
+SHA256sum: bf16fba1136919629e9c25119cadddd33a4b556c85086429ac3bfd98baeaf265
+Description:  Lua binding for the LuCI HTTP utility library
+
+Package: liblucihttp0
+Version: 2019-07-05-a34a17d5-1
+Depends: libc
+Provides: liblucihttp
+License: ISC
+Section: libs
+Architecture: arm_xscale
+Installed-Size: 6837
+Filename: liblucihttp0_2019-07-05-a34a17d5-1_arm_xscale.ipk
+Size: 7639
+SHA256sum: 4e9235be06525b024bb335de35060063a5ca044c44b944bb7f90fec6aaed775f
+Description:  LuCI HTTP utility library
+
+Package: luci-app-firewall
+Version: git-19.249.68069-204293a-1
+Depends: libc, firewall
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 11379
+Filename: luci-app-firewall_git-19.249.68069-204293a-1_all.ipk
+Size: 12098
+SHA256sum: a536f75074d0d8abbfb8c0e4d175b228d0d89b91ca2530ba0798693382f669be
+Description:  Firewall and Portforwarding application
+
+Package: luci-app-opkg
+Version: git-19.249.68069-204293a-1
+Depends: libc, opkg
+Section: luci
+Architecture: all
+Installed-Size: 7694
+Filename: luci-app-opkg_git-19.249.68069-204293a-1_all.ipk
+Size: 8412
+SHA256sum: c3ac59fb9f78f182dadf12821496b846ead4d92bed329450d7b7f85a76581588
+Description:  OPKG package management application
+
+Package: luci-base
+Version: git-19.249.68069-204293a-1
+Depends: libc, lua, luci-lib-nixio, luci-lib-ip, rpcd, libubus-lua, luci-lib-jsonc, liblucihttp-lua
+License: MIT
+Section: luci
+Architecture: arm_xscale
+Installed-Size: 150462
+Filename: luci-base_git-19.249.68069-204293a-1_arm_xscale.ipk
+Size: 151339
+SHA256sum: 6c91b47ce14b8538ab59a66dddff66064052ec9307933ccd2a46c2599b3ae8d2
+Description:  LuCI core libraries
+
+Package: luci-lib-ip
+Version: git-19.249.68069-204293a-1
+Depends: libc, liblua5.1.5, libnl-tiny
+License: Apache-2.0
+Section: luci
+Architecture: arm_xscale
+Installed-Size: 10328
+Filename: luci-lib-ip_git-19.249.68069-204293a-1_arm_xscale.ipk
+Size: 11094
+SHA256sum: 827bf6b42a5f65c2ef34b5966729c6f9770283a0356fe0e7a96dd417846bdef2
+Description:  Lua library for IP calculation and routing information
+
+Package: luci-lib-jsonc
+Version: git-19.249.68069-204293a-1
+Depends: libc, liblua5.1.5, libjson-c4
+Section: luci
+Architecture: arm_xscale
+Installed-Size: 3705
+Filename: luci-lib-jsonc_git-19.249.68069-204293a-1_arm_xscale.ipk
+Size: 4419
+SHA256sum: 463bb783954f9daf99c70b90564f90e318d8c32643a234c663efb22d1890a5ae
+Description:  Lua binding for JSON-C
+
+Package: luci-lib-nixio
+Version: git-19.249.68069-204293a-1
+Depends: libc, liblua5.1.5
+License: Apache-2.0
+Section: luci
+Architecture: arm_xscale
+Installed-Size: 29228
+Filename: luci-lib-nixio_git-19.249.68069-204293a-1_arm_xscale.ipk
+Size: 29578
+SHA256sum: 428af950fd7d397b806a2f6ec42a4a6fef1f975b4f3de616897a501285606a6d
+Description:  NIXIO POSIX library
+
+Package: luci-mod-admin-full
+Version: git-19.249.68069-204293a-1
+Depends: libc, luci-base, luci-mod-status, luci-mod-system, luci-mod-network
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 349
+Filename: luci-mod-admin-full_git-19.249.68069-204293a-1_all.ipk
+Size: 1103
+SHA256sum: 98b883d498dca5b9b789010589a334bbc3a322bbf31b123d10baa2405a77979c
+Description:  LuCI Administration - full-featured for full control
+
+Package: luci-mod-network
+Version: git-19.249.68069-204293a-1
+Depends: libc, luci-base, libiwinfo-lua
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 32468
+Filename: luci-mod-network_git-19.249.68069-204293a-1_all.ipk
+Size: 33355
+SHA256sum: e2c73d4ac483c0115fde0184fe70ae59e059d8fd486ee11f19ed1f5508b48de4
+Description:  LuCI Network Administration
+
+Package: luci-mod-status
+Version: git-19.249.68069-204293a-1
+Depends: libc, luci-base, libiwinfo20181126, libiwinfo-lua
+License: Apache-2.0
+Section: luci
+Architecture: arm_xscale
+Installed-Size: 23239
+Filename: luci-mod-status_git-19.249.68069-204293a-1_arm_xscale.ipk
+Size: 23917
+SHA256sum: 7ac9a6b105f0e3fe1b1d5cff9b03b2d1012cd610836325de4b45ec7714296c9e
+Description:  LuCI Status Pages
+
+Package: luci-mod-system
+Version: git-19.249.68069-204293a-1
+Depends: libc, luci-base
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 17468
+Filename: luci-mod-system_git-19.249.68069-204293a-1_all.ipk
+Size: 18257
+SHA256sum: 6eb7832ee2d12c97595278f3b2e8682216e4be92dfdeca8df5878fa3bfba8ac8
+Description:  LuCI Administration - Global System Settings
+
+Package: luci-proto-relay
+Version: git-19.249.68069-204293a-1
+Depends: libc, relayd
+Section: luci
+Architecture: all
+Installed-Size: 1604
+Filename: luci-proto-relay_git-19.249.68069-204293a-1_all.ipk
+Size: 2302
+SHA256sum: fab2539d3e1ad86c5af50f8056b1f42515850df1a20d1f39db004fa4a6c183de
+Description:  Support for relayd pseudo bridges
+
+Package: luci-theme-bootstrap
+Version: git-19.249.68069-204293a-1
+Depends: libc
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 11677
+Filename: luci-theme-bootstrap_git-19.249.68069-204293a-1_all.ipk
+Size: 12470
+SHA256sum: eb3bfbe4fc7654686e5722041447bf463e70b645af378f866832e7924ad3e08d
+Description:  Bootstrap Theme (default)
+
+Package: rpcd-mod-rrdns
+Version: 20170710
+Depends: libc, rpcd, libubox20170601, libubus20170705
+License: Apache-2.0
+Section: libs
+Architecture: arm_xscale
+Installed-Size: 3522
+Filename: rpcd-mod-rrdns_20170710_arm_xscale.ipk
+Size: 4324
+SHA256sum: 86c3f0250477f9d3e3b3b6e85775a4354a452b847c058bcfb18f300d9921b13c
+Description:  Provides rapid mass reverse DNS lookup functionality.
+
